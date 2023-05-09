@@ -57,15 +57,940 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelAbout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="linkLabelAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="linkLabelAbout.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="linkLabelAbout.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="linkLabelHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="linkLabelHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
+  </data>
+  <data name="linkLabelHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="linkLabelHelp.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="linkLabelHelp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="buttonBeiFen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonBeiFen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonBeiFen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 60</value>
+  </data>
+  <data name="buttonBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonBeiFen.Text" xml:space="preserve">
+    <value>备份</value>
+  </data>
+  <data name="buttonGengXin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonGengXin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonGengXin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 60</value>
+  </data>
+  <data name="buttonGengXin.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="buttonGengXin.Text" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.Text" xml:space="preserve">
+    <value>使用超级字词</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Text" xml:space="preserve">
+    <value>不要备份</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 90</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonBeiFenMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonBeiFenMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonBeiFenMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 25</value>
+  </data>
+  <data name="buttonBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonBeiFenMuLu.Text" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="labelBeiFenMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelBeiFenMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelBeiFenMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelBeiFenMuLu.Text" xml:space="preserve">
+    <value>备份目录</value>
+  </data>
+  <data name="labelBeiFenMuLu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxCiKuMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxCiKuMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxCiKuMuLu.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxCiKuMuLu.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxCiKuMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 90</value>
+  </data>
+  <data name="textBoxCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonCiKuMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonCiKuMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonCiKuMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 25</value>
+  </data>
+  <data name="buttonCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonCiKuMuLu.Text" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="labelCiKuMuLu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCiKuMuLu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelCiKuMuLu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelCiKuMuLu.Text" xml:space="preserve">
+    <value>词库目录</value>
+  </data>
+  <data name="labelCiKuMuLu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tabPagePrepare.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPagePrepare.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPagePrepare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPagePrepare.Text" xml:space="preserve">
+    <value>准备</value>
+  </data>
+  <data name="buttonTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 216</value>
+  </data>
+  <data name="buttonTianJia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonTianJia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 60</value>
+  </data>
+  <data name="buttonTianJia.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="buttonTianJia.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="labelCheckTianJia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCheckTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 216</value>
+  </data>
+  <data name="labelCheckTianJia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelCheckTianJia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 60</value>
+  </data>
+  <data name="labelCheckTianJia.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelCheckTianJia.Text" xml:space="preserve">
+    <value>√无重码</value>
+  </data>
+  <data name="labelCheckTianJia.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 253</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 23</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="comboBoxTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 216</value>
+  </data>
+  <data name="comboBoxTianJiaMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="comboBoxTianJiaMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 25</value>
+  </data>
+  <data name="labelTianJiaMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 213</value>
+  </data>
+  <data name="labelTianJiaMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTianJiaMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTianJiaMa.Text" xml:space="preserve">
+    <value>添加的码</value>
+  </data>
+  <data name="labelTianJiaMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="labelTianJiaMaChang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 249</value>
+  </data>
+  <data name="labelTianJiaMaChang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTianJiaMaChang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelTianJiaMaChang.Text" xml:space="preserve">
+    <value>码长</value>
+  </data>
+  <data name="labelTianJiaMaChang.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxTianJiaCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="textBoxTianJiaCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxTianJiaCi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxTianJiaCi.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxTianJiaCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 192</value>
+  </data>
+  <data name="textBoxTianJiaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="labelTianJiaCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTianJiaCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTianJiaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelTianJiaCi.Text" xml:space="preserve">
+    <value>添加的词</value>
+  </data>
+  <data name="labelTianJiaCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tabPageTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageTianJia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageTianJia.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageTianJia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPageTianJia.Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="buttonShanChu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonShanChu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonShanChu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 60</value>
+  </data>
+  <data name="buttonShanChu.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonShanChu.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="labelCheckShanChu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCheckShanChu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelCheckShanChu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 60</value>
+  </data>
+  <data name="labelCheckShanChu.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelCheckShanChu.Text" xml:space="preserve">
+    <value>√无补位</value>
+  </data>
+  <data name="labelCheckShanChu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="comboBoxShanChuMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="comboBoxShanChuMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 25</value>
+  </data>
+  <data name="comboBoxShanChuMa.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelShanChuMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelShanChuMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelShanChuMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelShanChuMa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelShanChuMa.Text" xml:space="preserve">
+    <value>删除的码</value>
+  </data>
+  <data name="labelShanChuMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxShanChuCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxShanChuCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxShanChuCi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxShanChuCi.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxShanChuCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 192</value>
+  </data>
+  <data name="textBoxShanChuCi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelShanChuCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelShanChuCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelShanChuCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelShanChuCi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelShanChuCi.Text" xml:space="preserve">
+    <value>删除的词</value>
+  </data>
+  <data name="labelShanChuCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tabPageShanChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageShanChu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageShanChu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageShanChu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPageShanChu.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.Text" xml:space="preserve">
+    <value>改码</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.Text" xml:space="preserve">
+    <value>改词</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxXiuGaiMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxXiuGaiMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxXiuGaiMa.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxXiuGaiMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 23</value>
+  </data>
+  <data name="textBoxXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonXiuGai.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonXiuGai.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonXiuGai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 60</value>
+  </data>
+  <data name="buttonXiuGai.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonXiuGai.Text" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="labelXiuGaiCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelXiuGaiCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelXiuGaiCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 60</value>
+  </data>
+  <data name="labelXiuGaiCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelXiuGaiCheck.Text" xml:space="preserve">
+    <value>√合规则</value>
+  </data>
+  <data name="labelXiuGaiCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="comboBoxYuan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="comboBoxYuan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 25</value>
+  </data>
+  <data name="comboBoxYuan.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelXiuGaiMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelXiuGaiMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelXiuGaiMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelXiuGaiMa.Text" xml:space="preserve">
+    <value>原来的码</value>
+  </data>
+  <data name="labelXiuGaiMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="labelYuan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelYuan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelYuan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelYuan.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelYuan.Text" xml:space="preserve">
+    <value>原来的词</value>
+  </data>
+  <data name="labelYuan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxXiuGaiCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxXiuGaiCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxXiuGaiCi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxXiuGaiCi.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxXiuGaiCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 192</value>
+  </data>
+  <data name="textBoxXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelXiuGaiCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelXiuGaiCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelXiuGaiCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelXiuGaiCi.Text" xml:space="preserve">
+    <value>改成的词</value>
+  </data>
+  <data name="labelXiuGaiCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tabPageXiuGai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageXiuGai.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageXiuGai.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageXiuGai.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPageXiuGai.Text" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 25</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.Text" xml:space="preserve">
+    <value>√无重码</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 25</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelTiaoPinChangMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinChangMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinChangMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelTiaoPinChangMa.Text" xml:space="preserve">
+    <value>对应的码</value>
+  </data>
+  <data name="labelTiaoPinChangMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 89</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelTiaoPinChangCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinChangCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinChangCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelTiaoPinChangCi.Text" xml:space="preserve">
+    <value>长码的词</value>
+  </data>
+  <data name="labelTiaoPinChangCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="buttonTiaoPin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonTiaoPin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonTiaoPin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="buttonTiaoPin.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonTiaoPin.Text" xml:space="preserve">
+    <value>调频</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 25</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.Text" xml:space="preserve">
+    <value>√合规则</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 25</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.Text" xml:space="preserve">
+    <value>对应的码</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 89</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 28</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.Text" xml:space="preserve">
+    <value>短码的词</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="tabPageTiaoPin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageTiaoPin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageTiaoPin.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageTiaoPin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPageTiaoPin.Text" xml:space="preserve">
+    <value>调频</value>
+  </data>
+  <data name="buttonImportLog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonImportLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonImportLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="buttonImportLog.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonImportLog.Text" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="buttonExportLog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonExportLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonExportLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="buttonExportLog.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonExportLog.Text" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="richTextBoxLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="richTextBoxLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 236</value>
+  </data>
+  <data name="richTextBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="richTextBoxLog.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPageRiZhi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageRiZhi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageRiZhi.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="tabPageRiZhi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 288</value>
+  </data>
+  <data name="tabPageRiZhi.Text" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="tabControlmain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControlmain.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>48, 30</value>
+  </data>
+  <data name="tabControlmain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 326</value>
+  </data>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>星空键道6词库文件|*.yaml</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>364, 326</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAAoIAQAFgAAACgAAAAAAQAAAAIAAAEAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA
@@ -4576,10 +5501,6 @@
         ////////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////8=
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>词库维护工具</value>
