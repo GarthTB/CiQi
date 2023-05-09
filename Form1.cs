@@ -132,7 +132,7 @@ namespace 词器
             List<string> Ma3 = new();//第三个字的所有编码（前三码）
             List<string> Ma4 = new();//最后一字的所有编码（前三码）
             StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma;//ReadLine中的每一行
+            string? Zi_Ma = null;//ReadLine中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
@@ -204,7 +204,7 @@ namespace 词器
                     {
                         Ma3.Add(Zi_Ma.Substring(2, 3));
                     }
-                    if (Zi_Ma.Length > 4 && Zi_Ma[..1] == Ci.Substring(2, 1) && !Ma4.Contains(Zi_Ma.Substring(2, 3)))
+                    if (Zi_Ma.Length > 4 && Zi_Ma[..1] == Ci[^1..] && !Ma4.Contains(Zi_Ma.Substring(2, 3)))
                     {
                         Ma4.Add(Zi_Ma.Substring(2, 3));
                     }
@@ -243,46 +243,37 @@ namespace 词器
 
         private bool AllInDanZi(string Ci)//检查编码用字是否全在DanZi中（输入参数必须大于1码）
         {
-            int n = 0;//符合条件的字数
+            bool n1 = false, n2 = false, n3 = false, n4 = false;//在DanZi中则计真
             StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma;//ReadLine中的每一行
+            string? Zi_Ma = null;//ReadLine中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
                 {
-                    if (Zi_Ma[..1] == Ci[..1]) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n++; }
-                    if (n == 2)
-                    {
-                        return true;
-                    }
+                    if (Zi_Ma[..1] == Ci[..1]) { n1 = true; }
+                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
+                    if (n1 && n2) { return true; }
                 }
             }
             else if (Ci.Length == 3)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
                 {
-                    if (Zi_Ma[..1] == Ci[..1]) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n++; }
-                    if (n == 3)
-                    {
-                        return true;
-                    }
+                    if (Zi_Ma[..1] == Ci[..1]) { n1 = true; }
+                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
+                    if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n3 = true; }
+                    if (n1 && n2 && n3) { return true; }
                 }
             }
             else
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
                 {
-                    if (Zi_Ma[..1] == Ci[..1]) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n++; }
-                    if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n++; }
-                    if (n == 4)
-                    {
-                        return true;
-                    }
+                    if (Zi_Ma[..1] == Ci[..1]) { n1 = true; }
+                    if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
+                    if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n3 = true; }
+                    if (Zi_Ma[..1] == Ci[^1..]) { n4 = true; }
+                    if (n1 && n2 && n3 && n4) { return true; }
                 }
             }
             return false;
@@ -291,8 +282,8 @@ namespace 词器
         private bool KongMa(string Ma)//检查该码是否为空码
         {
             StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            string? Ci_Ma;//ReadLine中的每一行
-            while((Ci_Ma = CiZuStream.ReadLine()) != null)
+            string? Ci_Ma = null;//ReadLine中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
                 if (Ci_Ma.Contains("\t" + Ma))
                 {
@@ -303,14 +294,46 @@ namespace 词器
         }
 
         //加词页的操作
+        private List<string> QuanMa = new();//添加词的所有全码
+
+        private void JianChaTianJia()
+        {
+            //已有条目禁止添加
+            //已有词提醒，有短码提醒
+            //多码可选提示，不是空码提示
+            //没有提示就显示勾勾没问题
+            if (comboBoxTianJiaMa.Items.Count > 1 && !KongMa(comboBoxTianJiaMa.Text))
+            {
+                labelCheckTianJia.ForeColor = Color.Blue;
+                labelCheckTianJia.Text = "!码可选\n!码非空";
+            }
+            else if (comboBoxTianJiaMa.Items.Count > 1)
+            {
+                labelCheckTianJia.ForeColor = Color.Blue;
+                labelCheckTianJia.Text = "!码可选";
+            }
+            else if (!KongMa(comboBoxTianJiaMa.Text))
+            {
+                labelCheckTianJia.ForeColor = Color.Blue;
+                labelCheckTianJia.Text = "!码非空";
+            }
+            else
+            {
+                labelCheckTianJia.ForeColor = Color.Green;
+                labelCheckTianJia.Text = "√没问题";
+            }
+        }
+
         private void textBoxTianJiaCi_TextChanged(object sender, EventArgs e)
         {
-            //如果清空就关掉检查
-            //如果输入了非中文，或码长小于2就报错
-            //如果编码用字不在DanZi中就报错
-            //获取词的编码，根据指定码长切割，放进combobox
-            //  多码可选提示，不是空码提示
-            //  没有错误就显示勾勾无重码
+            //清空combobox里的码
+            //  如果textbox为空就关掉检查
+            //  如果输入了非中文，或码长小于2就报错
+            //  如果编码用字不在DanZi中就报错
+            //  获取词的编码，根据指定码长切割，放进combobox
+            //    检查添加
+            comboBoxTianJiaMa.Text = string.Empty;
+            comboBoxTianJiaMa.Items.Clear();
             if (textBoxTianJiaCi.Text == string.Empty)
             {
                 labelCheckTianJia.Visible = false;
@@ -329,7 +352,7 @@ namespace 词器
             }
             else
             {
-                List<string> QuanMa = GetQuanMa(textBoxTianJiaCi.Text);
+                QuanMa = GetQuanMa(textBoxTianJiaCi.Text);
                 foreach (string quanma in QuanMa)
                 {
                     if (!comboBoxTianJiaMa.Items.Contains(quanma[..(int)numericUpDownTianJiaMaChang.Value]))
@@ -337,31 +360,35 @@ namespace 词器
                         comboBoxTianJiaMa.Items.Add(quanma[..(int)numericUpDownTianJiaMaChang.Value]);
                     }
                 }
-                if (comboBoxTianJiaMa.Items.Count > 1 && !KongMa(comboBoxTianJiaMa.Text))
+                comboBoxTianJiaMa.SelectedIndex = 0;
+                labelCheckTianJia.Visible = true;
+                JianChaTianJia();
+            }
+        }
+
+        private void comboBoxTianJiaMa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //如果非空则检查
+            if (comboBoxTianJiaMa.Text != string.Empty) { JianChaTianJia(); }
+        }
+
+        private void numericUpDownTianJiaMaChang_ValueChanged(object sender, EventArgs e)
+        {
+            //清空combobox里的码
+            //重新根据指定码长切割，放进combobox
+            //检查添加
+            comboBoxTianJiaMa.Text = string.Empty;
+            comboBoxTianJiaMa.Items.Clear();
+            foreach (string quanma in QuanMa)
+            {
+                if (!comboBoxTianJiaMa.Items.Contains(quanma[..(int)numericUpDownTianJiaMaChang.Value]))
                 {
-                    labelCheckTianJia.Visible = true;
-                    labelCheckTianJia.ForeColor = Color.Blue;
-                    labelCheckTianJia.Text = "!码可选\n!码非空";
-                }
-                else if (comboBoxTianJiaMa.Items.Count > 1)
-                {
-                    labelCheckTianJia.Visible = true;
-                    labelCheckTianJia.ForeColor = Color.Blue;
-                    labelCheckTianJia.Text = "!码可选";
-                }
-                else if (!KongMa(comboBoxTianJiaMa.Text))
-                {
-                    labelCheckTianJia.Visible = true;
-                    labelCheckTianJia.ForeColor = Color.Blue;
-                    labelCheckTianJia.Text = "!码非空";
-                }
-                else
-                {
-                    labelCheckTianJia.Visible = true;
-                    labelCheckTianJia.ForeColor = Color.Green;
-                    labelCheckTianJia.Text = "√没问题";
+                    comboBoxTianJiaMa.Items.Add(quanma[..(int)numericUpDownTianJiaMaChang.Value]);
                 }
             }
+            comboBoxTianJiaMa.SelectedIndex = 0;
+            labelCheckTianJia.Visible = true;
+            JianChaTianJia();
         }
     }
 }

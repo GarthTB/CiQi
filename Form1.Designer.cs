@@ -244,6 +244,7 @@
             numericUpDownTianJiaMaChang.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDownTianJiaMaChang.Name = "numericUpDownTianJiaMaChang";
             numericUpDownTianJiaMaChang.Value = new decimal(new int[] { 4, 0, 0, 0 });
+            numericUpDownTianJiaMaChang.ValueChanged += numericUpDownTianJiaMaChang_ValueChanged;
             // 
             // comboBoxTianJiaMa
             // 
@@ -251,6 +252,7 @@
             comboBoxTianJiaMa.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTianJiaMa.FormattingEnabled = true;
             comboBoxTianJiaMa.Name = "comboBoxTianJiaMa";
+            comboBoxTianJiaMa.SelectedIndexChanged += comboBoxTianJiaMa_SelectedIndexChanged;
             // 
             // labelTianJiaMa
             // 
