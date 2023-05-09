@@ -226,7 +226,6 @@ namespace 词器
                     }
                 }
             }
-            DanZiStream.Dispose();
             return BianMa;
         }
 
@@ -255,7 +254,6 @@ namespace 词器
                     if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n++; }
                     if (n == 2)
                     {
-                        DanZiStream.Dispose();
                         return true;
                     }
                 }
@@ -269,7 +267,6 @@ namespace 词器
                     if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n++; }
                     if (n == 3)
                     {
-                        DanZiStream.Dispose();
                         return true;
                     }
                 }
@@ -284,7 +281,6 @@ namespace 词器
                     if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n++; }
                     if (n == 4)
                     {
-                        DanZiStream.Dispose();
                         return true;
                     }
                 }
@@ -300,11 +296,9 @@ namespace 词器
             {
                 if (Ci_Ma.Contains("\t" + Ma))
                 {
-                    CiZuStream.Dispose();
                     return false;
                 }
             }
-            CiZuStream.Dispose();
             return true;
         }
 
