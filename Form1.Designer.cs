@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formmain));
             tabControlmain = new TabControl();
-            tabPagePrepare = new TabPage();
+            tabPageHome = new TabPage();
             linkLabelAbout = new LinkLabel();
             linkLabelHelp = new LinkLabel();
             buttonBeiFen = new Button();
@@ -87,8 +87,9 @@
             buttonExportLog = new Button();
             richTextBoxLog = new RichTextBox();
             openFileDialog = new OpenFileDialog();
+            folderBrowserDialog = new FolderBrowserDialog();
             tabControlmain.SuspendLayout();
-            tabPagePrepare.SuspendLayout();
+            tabPageHome.SuspendLayout();
             tabPageTianJia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownTianJiaMaChang).BeginInit();
             tabPageShanChu.SuspendLayout();
@@ -100,7 +101,7 @@
             // tabControlmain
             // 
             resources.ApplyResources(tabControlmain, "tabControlmain");
-            tabControlmain.Controls.Add(tabPagePrepare);
+            tabControlmain.Controls.Add(tabPageHome);
             tabControlmain.Controls.Add(tabPageTianJia);
             tabControlmain.Controls.Add(tabPageShanChu);
             tabControlmain.Controls.Add(tabPageXiuGai);
@@ -108,24 +109,25 @@
             tabControlmain.Controls.Add(tabPageRiZhi);
             tabControlmain.Name = "tabControlmain";
             tabControlmain.SelectedIndex = 0;
+            tabControlmain.Selecting += tabControlmain_Selecting;
             // 
-            // tabPagePrepare
+            // tabPageHome
             // 
-            resources.ApplyResources(tabPagePrepare, "tabPagePrepare");
-            tabPagePrepare.Controls.Add(linkLabelAbout);
-            tabPagePrepare.Controls.Add(linkLabelHelp);
-            tabPagePrepare.Controls.Add(buttonBeiFen);
-            tabPagePrepare.Controls.Add(buttonGengXin);
-            tabPagePrepare.Controls.Add(checkBoxChaoJiZiCi);
-            tabPagePrepare.Controls.Add(checkBoxBuYaoBeiFen);
-            tabPagePrepare.Controls.Add(textBoxBeiFenMuLu);
-            tabPagePrepare.Controls.Add(buttonBeiFenMuLu);
-            tabPagePrepare.Controls.Add(labelBeiFenMuLu);
-            tabPagePrepare.Controls.Add(textBoxCiKuMuLu);
-            tabPagePrepare.Controls.Add(buttonCiKuMuLu);
-            tabPagePrepare.Controls.Add(labelCiKuMuLu);
-            tabPagePrepare.Name = "tabPagePrepare";
-            tabPagePrepare.UseVisualStyleBackColor = true;
+            resources.ApplyResources(tabPageHome, "tabPageHome");
+            tabPageHome.Controls.Add(linkLabelAbout);
+            tabPageHome.Controls.Add(linkLabelHelp);
+            tabPageHome.Controls.Add(buttonBeiFen);
+            tabPageHome.Controls.Add(buttonGengXin);
+            tabPageHome.Controls.Add(checkBoxChaoJiZiCi);
+            tabPageHome.Controls.Add(checkBoxBuYaoBeiFen);
+            tabPageHome.Controls.Add(textBoxBeiFenMuLu);
+            tabPageHome.Controls.Add(buttonBeiFenMuLu);
+            tabPageHome.Controls.Add(labelBeiFenMuLu);
+            tabPageHome.Controls.Add(textBoxCiKuMuLu);
+            tabPageHome.Controls.Add(buttonCiKuMuLu);
+            tabPageHome.Controls.Add(labelCiKuMuLu);
+            tabPageHome.Name = "tabPageHome";
+            tabPageHome.UseVisualStyleBackColor = true;
             // 
             // linkLabelAbout
             // 
@@ -502,6 +504,10 @@
             openFileDialog.FileName = "openFileDialog";
             resources.ApplyResources(openFileDialog, "openFileDialog");
             // 
+            // folderBrowserDialog
+            // 
+            resources.ApplyResources(folderBrowserDialog, "folderBrowserDialog");
+            // 
             // Formmain
             // 
             resources.ApplyResources(this, "$this");
@@ -512,8 +518,8 @@
             Name = "Formmain";
             Load += Formmain_Load;
             tabControlmain.ResumeLayout(false);
-            tabPagePrepare.ResumeLayout(false);
-            tabPagePrepare.PerformLayout();
+            tabPageHome.ResumeLayout(false);
+            tabPageHome.PerformLayout();
             tabPageTianJia.ResumeLayout(false);
             tabPageTianJia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownTianJiaMaChang).EndInit();
@@ -535,7 +541,7 @@
         private TabPage tabPageXiuGai;
         private TabPage tabPageTiaoPin;
         private TabPage tabPageRiZhi;
-        private TabPage tabPagePrepare;
+        private TabPage tabPageHome;
         private CheckBox checkBoxChaoJiZiCi;
         private CheckBox checkBoxBuYaoBeiFen;
         private TextBox textBoxBeiFenMuLu;
@@ -587,5 +593,6 @@
         private Button buttonBeiFen;
         private Button buttonGengXin;
         private OpenFileDialog openFileDialog;
+        private FolderBrowserDialog folderBrowserDialog;
     }
 }

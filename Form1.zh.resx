@@ -262,17 +262,17 @@
   <data name="labelCiKuMuLu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="tabPagePrepare.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageHome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="tabPagePrepare.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageHome.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="tabPagePrepare.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPageHome.Size" type="System.Drawing.Size, System.Drawing">
     <value>356, 288</value>
   </data>
-  <data name="tabPagePrepare.Text" xml:space="preserve">
-    <value>准备</value>
+  <data name="tabPageHome.Text" xml:space="preserve">
+    <value>主页</value>
   </data>
   <data name="buttonTianJia.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 216</value>
