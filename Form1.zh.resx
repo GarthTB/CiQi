@@ -79,11 +79,11 @@
   <data name="labelCheckBeiFen.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="labelCheckBeiFen.Text" xml:space="preserve">
-    <value>√已备份</value>
-  </data>
   <data name="labelCheckBeiFen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckBeiFen.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="linkLabelAbout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -319,11 +319,11 @@
   <data name="labelCheckTianJia.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="labelCheckTianJia.Text" xml:space="preserve">
-    <value>√无重码</value>
-  </data>
   <data name="labelCheckTianJia.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckTianJia.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="numericUpDownTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 253</value>

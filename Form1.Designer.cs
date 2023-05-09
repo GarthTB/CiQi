@@ -243,7 +243,7 @@
             numericUpDownTianJiaMaChang.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
             numericUpDownTianJiaMaChang.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDownTianJiaMaChang.Name = "numericUpDownTianJiaMaChang";
-            numericUpDownTianJiaMaChang.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            numericUpDownTianJiaMaChang.Value = new decimal(new int[] { 4, 0, 0, 0 });
             // 
             // comboBoxTianJiaMa
             // 
@@ -267,6 +267,7 @@
             resources.ApplyResources(textBoxTianJiaCi, "textBoxTianJiaCi");
             textBoxTianJiaCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTianJiaCi.Name = "textBoxTianJiaCi";
+            textBoxTianJiaCi.TextChanged += textBoxTianJiaCi_TextChanged;
             // 
             // labelTianJiaCi
             // 
