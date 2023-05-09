@@ -58,20 +58,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCheckBeiFen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelCheckBeiFen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 252</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCheckBeiFen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="labelCheckBeiFen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="labelCheckBeiFen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCheckBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelCheckBeiFen.Text" xml:space="preserve">
+    <value>√已备份</value>
+  </data>
+  <data name="labelCheckBeiFen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="linkLabelAbout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 252</value>
+  </data>
   <data name="linkLabelAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="linkLabelAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 24</value>
+    <value>74, 24</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="linkLabelAbout.Text" xml:space="preserve">
     <value>关于</value>
@@ -79,14 +106,17 @@
   <data name="linkLabelAbout.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
+  <data name="linkLabelHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 216</value>
+  </data>
   <data name="linkLabelHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
   <data name="linkLabelHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 24</value>
+    <value>74, 24</value>
   </data>
   <data name="linkLabelHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="linkLabelHelp.Text" xml:space="preserve">
     <value>帮助</value>
@@ -124,26 +154,11 @@
   <data name="buttonGengXin.Text" xml:space="preserve">
     <value>更新</value>
   </data>
-  <data name="checkBoxChaoJiZiCi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.Text" xml:space="preserve">
-    <value>使用超级字词</value>
-  </data>
   <data name="checkBoxBuYaoBeiFen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 216</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -152,10 +167,10 @@
     <value>6, 0, 6, 0</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
+    <value>110, 24</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.Text" xml:space="preserve">
     <value>不要备份</value>
@@ -607,22 +622,19 @@
   <data name="buttonXiuGai.Text" xml:space="preserve">
     <value>修改</value>
   </data>
-  <data name="labelXiuGaiCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelCheckXiuGai.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelXiuGaiCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="labelCheckXiuGai.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="labelXiuGaiCheck.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelCheckXiuGai.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 60</value>
   </data>
-  <data name="labelXiuGaiCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="labelXiuGaiCheck.Text" xml:space="preserve">
+  <data name="labelCheckXiuGai.Text" xml:space="preserve">
     <value>√合规则</value>
   </data>
-  <data name="labelXiuGaiCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="labelCheckXiuGai.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
   <data name="comboBoxYuan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -721,22 +733,19 @@
   <data name="tabPageXiuGai.Text" xml:space="preserve">
     <value>修改</value>
   </data>
-  <data name="labelTiaoPinDuanCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelCheckTiaoPinDuan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelTiaoPinDuanCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="labelCheckTiaoPinDuan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="labelTiaoPinDuanCheck.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelCheckTiaoPinDuan.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 25</value>
   </data>
-  <data name="labelTiaoPinDuanCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelTiaoPinDuanCheck.Text" xml:space="preserve">
+  <data name="labelCheckTiaoPinDuan.Text" xml:space="preserve">
     <value>√无重码</value>
   </data>
-  <data name="labelTiaoPinDuanCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="labelCheckTiaoPinDuan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
   <data name="comboBoxTiaoPinChangMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -817,22 +826,19 @@
   <data name="buttonTiaoPin.Text" xml:space="preserve">
     <value>调频</value>
   </data>
-  <data name="labelTiaoPinChangCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelCheckTiaoPinChang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelTiaoPinChangCheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="labelCheckTiaoPinChang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
-  <data name="labelTiaoPinChangCheck.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelCheckTiaoPinChang.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 25</value>
   </data>
-  <data name="labelTiaoPinChangCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="labelTiaoPinChangCheck.Text" xml:space="preserve">
+  <data name="labelCheckTiaoPinChang.Text" xml:space="preserve">
     <value>√合规则</value>
   </data>
-  <data name="labelTiaoPinChangCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="labelCheckTiaoPinChang.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
   <data name="comboBoxTiaoPinDuanMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">

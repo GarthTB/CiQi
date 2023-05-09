@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formmain));
             tabControlmain = new TabControl();
             tabPageHome = new TabPage();
+            labelCheckBeiFen = new Label();
             linkLabelAbout = new LinkLabel();
             linkLabelHelp = new LinkLabel();
             buttonBeiFen = new Button();
             buttonGengXin = new Button();
-            checkBoxChaoJiZiCi = new CheckBox();
             checkBoxBuYaoBeiFen = new CheckBox();
             textBoxBeiFenMuLu = new TextBox();
             buttonBeiFenMuLu = new Button();
@@ -64,20 +64,20 @@
             radioButtonXiuGaiCi = new RadioButton();
             textBoxXiuGaiMa = new TextBox();
             buttonXiuGai = new Button();
-            labelXiuGaiCheck = new Label();
+            labelCheckXiuGai = new Label();
             comboBoxYuan = new ComboBox();
             labelXiuGaiMa = new Label();
             labelYuan = new Label();
             textBoxXiuGaiCi = new TextBox();
             labelXiuGaiCi = new Label();
             tabPageTiaoPin = new TabPage();
-            labelTiaoPinDuanCheck = new Label();
+            labelCheckTiaoPinDuan = new Label();
             comboBoxTiaoPinChangMa = new ComboBox();
             labelTiaoPinChangMa = new Label();
             textBoxTiaoPinChangCi = new TextBox();
             labelTiaoPinChangCi = new Label();
             buttonTiaoPin = new Button();
-            labelTiaoPinChangCheck = new Label();
+            labelCheckTiaoPinChang = new Label();
             comboBoxTiaoPinDuanMa = new ComboBox();
             labelTiaoPinDuanMa = new Label();
             textBoxTiaoPinDuanCi = new TextBox();
@@ -109,16 +109,16 @@
             tabControlmain.Controls.Add(tabPageRiZhi);
             tabControlmain.Name = "tabControlmain";
             tabControlmain.SelectedIndex = 0;
-            tabControlmain.Selecting += tabControlmain_Selecting;
+            tabControlmain.Click += tabControlmain_Click;
             // 
             // tabPageHome
             // 
             resources.ApplyResources(tabPageHome, "tabPageHome");
+            tabPageHome.Controls.Add(labelCheckBeiFen);
             tabPageHome.Controls.Add(linkLabelAbout);
             tabPageHome.Controls.Add(linkLabelHelp);
             tabPageHome.Controls.Add(buttonBeiFen);
             tabPageHome.Controls.Add(buttonGengXin);
-            tabPageHome.Controls.Add(checkBoxChaoJiZiCi);
             tabPageHome.Controls.Add(checkBoxBuYaoBeiFen);
             tabPageHome.Controls.Add(textBoxBeiFenMuLu);
             tabPageHome.Controls.Add(buttonBeiFenMuLu);
@@ -129,41 +129,46 @@
             tabPageHome.Name = "tabPageHome";
             tabPageHome.UseVisualStyleBackColor = true;
             // 
+            // labelCheckBeiFen
+            // 
+            resources.ApplyResources(labelCheckBeiFen, "labelCheckBeiFen");
+            labelCheckBeiFen.ForeColor = Color.Green;
+            labelCheckBeiFen.Name = "labelCheckBeiFen";
+            // 
             // linkLabelAbout
             // 
             resources.ApplyResources(linkLabelAbout, "linkLabelAbout");
             linkLabelAbout.Name = "linkLabelAbout";
             linkLabelAbout.TabStop = true;
+            linkLabelAbout.LinkClicked += linkLabelAbout_LinkClicked;
             // 
             // linkLabelHelp
             // 
             resources.ApplyResources(linkLabelHelp, "linkLabelHelp");
             linkLabelHelp.Name = "linkLabelHelp";
             linkLabelHelp.TabStop = true;
+            linkLabelHelp.LinkClicked += linkLabelHelp_LinkClicked;
             // 
             // buttonBeiFen
             // 
             resources.ApplyResources(buttonBeiFen, "buttonBeiFen");
             buttonBeiFen.Name = "buttonBeiFen";
             buttonBeiFen.UseVisualStyleBackColor = true;
+            buttonBeiFen.Click += buttonBeiFen_Click;
             // 
             // buttonGengXin
             // 
             resources.ApplyResources(buttonGengXin, "buttonGengXin");
             buttonGengXin.Name = "buttonGengXin";
             buttonGengXin.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxChaoJiZiCi
-            // 
-            resources.ApplyResources(checkBoxChaoJiZiCi, "checkBoxChaoJiZiCi");
-            checkBoxChaoJiZiCi.Name = "checkBoxChaoJiZiCi";
-            checkBoxChaoJiZiCi.UseVisualStyleBackColor = true;
+            buttonGengXin.Click += buttonGengXin_Click;
             // 
             // checkBoxBuYaoBeiFen
             // 
             resources.ApplyResources(checkBoxBuYaoBeiFen, "checkBoxBuYaoBeiFen");
             checkBoxBuYaoBeiFen.Name = "checkBoxBuYaoBeiFen";
             checkBoxBuYaoBeiFen.UseVisualStyleBackColor = true;
+            checkBoxBuYaoBeiFen.CheckedChanged += checkBoxBuYaoBeiFen_CheckedChanged;
             // 
             // textBoxBeiFenMuLu
             // 
@@ -178,6 +183,7 @@
             resources.ApplyResources(buttonBeiFenMuLu, "buttonBeiFenMuLu");
             buttonBeiFenMuLu.Name = "buttonBeiFenMuLu";
             buttonBeiFenMuLu.UseVisualStyleBackColor = true;
+            buttonBeiFenMuLu.Click += buttonBeiFenMuLu_Click;
             // 
             // labelBeiFenMuLu
             // 
@@ -197,6 +203,7 @@
             resources.ApplyResources(buttonCiKuMuLu, "buttonCiKuMuLu");
             buttonCiKuMuLu.Name = "buttonCiKuMuLu";
             buttonCiKuMuLu.UseVisualStyleBackColor = true;
+            buttonCiKuMuLu.Click += buttonCiKuMuLu_Click;
             // 
             // labelCiKuMuLu
             // 
@@ -320,7 +327,7 @@
             tabPageXiuGai.Controls.Add(radioButtonXiuGaiCi);
             tabPageXiuGai.Controls.Add(textBoxXiuGaiMa);
             tabPageXiuGai.Controls.Add(buttonXiuGai);
-            tabPageXiuGai.Controls.Add(labelXiuGaiCheck);
+            tabPageXiuGai.Controls.Add(labelCheckXiuGai);
             tabPageXiuGai.Controls.Add(comboBoxYuan);
             tabPageXiuGai.Controls.Add(labelXiuGaiMa);
             tabPageXiuGai.Controls.Add(labelYuan);
@@ -355,11 +362,11 @@
             buttonXiuGai.Name = "buttonXiuGai";
             buttonXiuGai.UseVisualStyleBackColor = true;
             // 
-            // labelXiuGaiCheck
+            // labelCheckXiuGai
             // 
-            resources.ApplyResources(labelXiuGaiCheck, "labelXiuGaiCheck");
-            labelXiuGaiCheck.ForeColor = Color.Green;
-            labelXiuGaiCheck.Name = "labelXiuGaiCheck";
+            resources.ApplyResources(labelCheckXiuGai, "labelCheckXiuGai");
+            labelCheckXiuGai.ForeColor = Color.Green;
+            labelCheckXiuGai.Name = "labelCheckXiuGai";
             // 
             // comboBoxYuan
             // 
@@ -392,13 +399,13 @@
             // tabPageTiaoPin
             // 
             resources.ApplyResources(tabPageTiaoPin, "tabPageTiaoPin");
-            tabPageTiaoPin.Controls.Add(labelTiaoPinDuanCheck);
+            tabPageTiaoPin.Controls.Add(labelCheckTiaoPinDuan);
             tabPageTiaoPin.Controls.Add(comboBoxTiaoPinChangMa);
             tabPageTiaoPin.Controls.Add(labelTiaoPinChangMa);
             tabPageTiaoPin.Controls.Add(textBoxTiaoPinChangCi);
             tabPageTiaoPin.Controls.Add(labelTiaoPinChangCi);
             tabPageTiaoPin.Controls.Add(buttonTiaoPin);
-            tabPageTiaoPin.Controls.Add(labelTiaoPinChangCheck);
+            tabPageTiaoPin.Controls.Add(labelCheckTiaoPinChang);
             tabPageTiaoPin.Controls.Add(comboBoxTiaoPinDuanMa);
             tabPageTiaoPin.Controls.Add(labelTiaoPinDuanMa);
             tabPageTiaoPin.Controls.Add(textBoxTiaoPinDuanCi);
@@ -406,11 +413,11 @@
             tabPageTiaoPin.Name = "tabPageTiaoPin";
             tabPageTiaoPin.UseVisualStyleBackColor = true;
             // 
-            // labelTiaoPinDuanCheck
+            // labelCheckTiaoPinDuan
             // 
-            resources.ApplyResources(labelTiaoPinDuanCheck, "labelTiaoPinDuanCheck");
-            labelTiaoPinDuanCheck.ForeColor = Color.Green;
-            labelTiaoPinDuanCheck.Name = "labelTiaoPinDuanCheck";
+            resources.ApplyResources(labelCheckTiaoPinDuan, "labelCheckTiaoPinDuan");
+            labelCheckTiaoPinDuan.ForeColor = Color.Green;
+            labelCheckTiaoPinDuan.Name = "labelCheckTiaoPinDuan";
             // 
             // comboBoxTiaoPinChangMa
             // 
@@ -441,11 +448,11 @@
             buttonTiaoPin.Name = "buttonTiaoPin";
             buttonTiaoPin.UseVisualStyleBackColor = true;
             // 
-            // labelTiaoPinChangCheck
+            // labelCheckTiaoPinChang
             // 
-            resources.ApplyResources(labelTiaoPinChangCheck, "labelTiaoPinChangCheck");
-            labelTiaoPinChangCheck.ForeColor = Color.Green;
-            labelTiaoPinChangCheck.Name = "labelTiaoPinChangCheck";
+            resources.ApplyResources(labelCheckTiaoPinChang, "labelCheckTiaoPinChang");
+            labelCheckTiaoPinChang.ForeColor = Color.Green;
+            labelCheckTiaoPinChang.Name = "labelCheckTiaoPinChang";
             // 
             // comboBoxTiaoPinDuanMa
             // 
@@ -542,7 +549,6 @@
         private TabPage tabPageTiaoPin;
         private TabPage tabPageRiZhi;
         private TabPage tabPageHome;
-        private CheckBox checkBoxChaoJiZiCi;
         private CheckBox checkBoxBuYaoBeiFen;
         private TextBox textBoxBeiFenMuLu;
         private Button buttonBeiFenMuLu;
@@ -567,19 +573,19 @@
         private RadioButton radioButtonXiuGaiCi;
         private TextBox textBoxXiuGaiMa;
         private Button buttonXiuGai;
-        private Label labelXiuGaiCheck;
+        private Label labelCheckXiuGai;
         private ComboBox comboBoxYuan;
         private Label labelXiuGaiMa;
         private Label labelYuan;
         private TextBox textBoxXiuGaiCi;
         private Label labelXiuGaiCi;
-        private Label labelTiaoPinDuanCheck;
+        private Label labelCheckTiaoPinDuan;
         private ComboBox comboBoxTiaoPinChangMa;
         private Label labelTiaoPinChangMa;
         private TextBox textBoxTiaoPinChangCi;
         private Label labelTiaoPinChangCi;
         private Button buttonTiaoPin;
-        private Label labelTiaoPinChangCheck;
+        private Label labelCheckTiaoPinChang;
         private ComboBox comboBoxTiaoPinDuanMa;
         private Label labelTiaoPinDuanMa;
         private TextBox textBoxTiaoPinDuanCi;
@@ -594,5 +600,6 @@
         private Button buttonGengXin;
         private OpenFileDialog openFileDialog;
         private FolderBrowserDialog folderBrowserDialog;
+        private Label labelCheckBeiFen;
     }
 }
