@@ -454,20 +454,18 @@ namespace 词器
             using StreamWriter NewCiZuStream = new(textBoxCiKuMuLu.Text + @"\xkjd6.cizu.dict(new).yaml");
             string? Ci_Ma = null;//词组流中的每一行
             string[] TempArray = new string[2];//用来给条目排序的缓存数组
-            List<string> TempList = new();//用来给条目排序的缓存list
-            List<string> SortedTempList = new();//排序后的缓存list
+            string[] SortedTempArray = new string[2];//排序后的缓存数组
             TempArray[1] = comboBoxTianJiaMa.Text;//将要加的码作为数组的第二个元素
             for (int i = 0; i < 5; i++)//先把文件头写了
             {
-                Ci_Ma = CiZuStream.ReadLine();
-                NewCiZuStream.WriteLine(Ci_Ma);
+                NewCiZuStream.WriteLine(CiZuStream.ReadLine());
             }
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
                 TempArray[0] = Ci_Ma.Split("\t")[1];//取出这一行的码作为数组的第一个元素
-                TempList = SortedTempList = TempArray.ToList();
-                SortedTempList.Sort();
-                if (TempList.Equals(SortedTempList))
+                SortedTempArray = TempArray;
+                Array.Sort(SortedTempArray);
+                if (TempArray[0] == SortedTempArray[0])
                 {
                     NewCiZuStream.WriteLine(Ci_Ma);
                 }
@@ -475,13 +473,7 @@ namespace 词器
                 {
                     NewCiZuStream.WriteLine(textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text);
                     NewCiZuStream.WriteLine(Ci_Ma);
-                    break;
                 }
-            }
-            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
-            {
-                Ci_Ma = CiZuStream.ReadLine();
-                NewCiZuStream.WriteLine(Ci_Ma);
             }
             richTextBoxLog.Text += textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text + "\t添加\t" + labelCheckTianJia.Text + "\r\n";
         }
