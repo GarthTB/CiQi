@@ -229,6 +229,7 @@
             resources.ApplyResources(buttonTianJia, "buttonTianJia");
             buttonTianJia.Name = "buttonTianJia";
             buttonTianJia.UseVisualStyleBackColor = true;
+            buttonTianJia.Click += buttonTianJia_Click;
             // 
             // labelCheckTianJia
             // 

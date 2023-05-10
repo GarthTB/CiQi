@@ -1,3 +1,4 @@
+using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -123,7 +124,7 @@ namespace 词器
             //如果需要备份，没有备份，就弹框确认
         }
 
-        //四个用于检查的函数
+        //五个用于检查的函数
         private List<string> GetQuanMa(string Ci)//获取词组的所有全码，无重复（输入参数已排除所有错误）
         {
             List<string> BianMa = new();//词组的所有可能编码
@@ -132,7 +133,7 @@ namespace 词器
             List<string> Ma3 = new();//第三个字的所有编码（前三码）
             List<string> Ma4 = new();//最后一字的所有编码（前三码）
             using StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma = null;//字码流中的每一行
+            string? Zi_Ma = null;//单字流中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
@@ -243,9 +244,9 @@ namespace 词器
 
         private bool AllInDanZi(string Ci)//检查编码用字是否全在DanZi中（输入参数必须大于1码）
         {
-            bool n1 = false, n2 = false, n3 = false, n4 = false;//在DanZi中则计真
+            bool n1 = false, n2 = false, n3 = false, n4 = false;//在DanZi中就计真
             using StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma = null;//字码流中的每一行
+            string? Zi_Ma = null;//单字流中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
@@ -279,38 +280,60 @@ namespace 词器
             return false;
         }
 
-        private string CuoWuXinXi(string Ci, string Ma)//检查四个问题并返回代号
+        private bool YiYouTiaoMu(string Ci, string Ma)//检查该条目是否已在CiZu中
         {
-            //检查该条目是否已在CiZu中（返回“条”）
-            //否则：检查该词是否已在CiZu中（返回“词”）
-            //     检查该码是否已在CiZu中（返回“码”）
-            //     否则：检查是否有更短空码（返回“短”）
-            string CuoWuXinXi = string.Empty;
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            string? Ci_Ma = null;//词码流中的每一行
+            string? Ci_Ma = null;//词组流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
                 if (Ci_Ma == Ci + "\t" + Ma)
                 {
-                    CuoWuXinXi += "条";
-                }
-                else
-                {
-                    if (Ci_Ma.StartsWith(Ci + "\t"))
-                    {
-                        CuoWuXinXi += "词";
-                    }
-                    if (Ci_Ma.EndsWith("\t" + Ma))
-                    {
-                        CuoWuXinXi += "码";
-                    }
-                    else if (Ci_Ma.EndsWith("\t" + Ma[..^1]))
-                    {
-                        CuoWuXinXi += "短";
-                    }
+                    return true;
                 }
             }
-            return CuoWuXinXi;
+            return false;
+        }
+
+        private bool YiYouCi(string Ci)//检查该词是否已在CiZu中
+        {
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                if (Ci_Ma.StartsWith(Ci + "\t"))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool YiYouMa(string Ma)//检查该码是否已在CiZu中
+        {
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                if (Ci_Ma.EndsWith("\t" + Ma))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool GengDuanKongMa(string Ma)//检查是否有更短空码
+        {
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                if (Ci_Ma.EndsWith("\t" + Ma[..^1]))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         //加词页的操作
@@ -319,10 +342,41 @@ namespace 词器
         private void JianChaTianJia()
         {
             //清空检查器
-            //已有条目禁止添加
+            //已有条目报错
             //  多码可选提示，已有词提示，码位被占提示，有更短空码提示
             //  没有提示就显示勾勾没问题
-            labelCheckTianJia.Text = CuoWuXinXi(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text);
+            labelCheckTianJia.Text = string.Empty;
+            if (YiYouTiaoMu(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text))
+            {
+                labelCheckTianJia.ForeColor = Color.Red;
+                labelCheckTianJia.Text = "×已有词";
+            }
+            else
+            {
+                labelCheckTianJia.ForeColor = Color.Blue;
+                labelCheckTianJia.Text = "!";
+                if (comboBoxTianJiaMa.Items.Count > 1)
+                {
+                    labelCheckTianJia.Text += " 多";
+                }
+                if (YiYouCi(textBoxTianJiaCi.Text))
+                {
+                    labelCheckTianJia.Text += " 已";
+                }
+                if (YiYouMa(comboBoxTianJiaMa.Text))
+                {
+                    labelCheckTianJia.Text += " 占";
+                }
+                if (comboBoxTianJiaMa.Text.Length > 3 && GengDuanKongMa(comboBoxTianJiaMa.Text))
+                {
+                    labelCheckTianJia.Text += " 短";
+                }
+                if (labelCheckTianJia.Text == "!")
+                {
+                    labelCheckTianJia.ForeColor = Color.Green;
+                    labelCheckTianJia.Text = "√没问题";
+                }
+            }
         }
 
         private void textBoxTianJiaCi_TextChanged(object sender, EventArgs e)
@@ -331,8 +385,8 @@ namespace 词器
             //  如果textbox为空就关掉检查
             //  如果输入了非中文，或码长小于2就报错
             //  如果编码用字不在DanZi中就报错
-            //  获取词的编码，根据指定码长切割，放进combobox
-            //    检查添加
+            //    获取词的编码，根据指定码长切割，放进combobox
+            //    开启检查器，以便combobox执行检查
             QuanMa.Clear();
             comboBoxTianJiaMa.Text = string.Empty;
             comboBoxTianJiaMa.Items.Clear();
@@ -364,13 +418,12 @@ namespace 词器
                 }
                 comboBoxTianJiaMa.SelectedIndex = 0;
                 labelCheckTianJia.Visible = true;
-                JianChaTianJia();
             }
         }
 
         private void comboBoxTianJiaMa_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //如果全码list非空则检查
+            //如果全码list非空就执行检查
             if (QuanMa.Any()) { JianChaTianJia(); }
         }
 
@@ -379,7 +432,6 @@ namespace 词器
             //如果全码list非空
             //  清空combobox里的码
             //  重新根据指定码长切割全码，放进combobox
-            //  检查添加
             if (QuanMa.Any())
             {
                 comboBoxTianJiaMa.Text = string.Empty;
@@ -392,7 +444,67 @@ namespace 词器
                     }
                 }
                 comboBoxTianJiaMa.SelectedIndex = 0;
-                JianChaTianJia();
+            }
+        }
+
+        private void TianJia()
+        {
+            //将词组加入CiZu并写日志
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            using StreamWriter NewCiZuStream = new(textBoxCiKuMuLu.Text + @"\xkjd6.cizu.dict(new).yaml");
+            string? Ci_Ma = null;//词组流中的每一行
+            string[] TempArray = new string[2];//用来给条目排序的缓存数组
+            List<string> TempList = new();//用来给条目排序的缓存list
+            List<string> SortedTempList = new();//排序后的缓存list
+            TempArray[1] = comboBoxTianJiaMa.Text;//将要加的码作为数组的第二个元素
+            for (int i = 0; i < 5; i++)//先把文件头写了
+            {
+                Ci_Ma = CiZuStream.ReadLine();
+                NewCiZuStream.WriteLine(Ci_Ma);
+            }
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                TempArray[0] = Ci_Ma.Split("\t")[1];//取出这一行的码作为数组的第一个元素
+                TempList = SortedTempList = TempArray.ToList();
+                SortedTempList.Sort();
+                if (TempList.Equals(SortedTempList))
+                {
+                    NewCiZuStream.WriteLine(Ci_Ma);
+                }
+                else
+                {
+                    NewCiZuStream.WriteLine(textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text);
+                    NewCiZuStream.WriteLine(Ci_Ma);
+                    break;
+                }
+            }
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                Ci_Ma = CiZuStream.ReadLine();
+                NewCiZuStream.WriteLine(Ci_Ma);
+            }
+            richTextBoxLog.Text += textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text + "\t添加\t" + labelCheckTianJia.Text + "\r\n";
+        }
+
+        private void buttonTianJia_Click(object sender, EventArgs e)
+        {
+            //检查没问题就添加
+            //检查有提示就弹框确认
+            //其他情况就不添加并弹框提示
+            if (labelCheckTianJia.Visible && labelCheckTianJia.ForeColor == Color.Green)
+            {
+                TianJia();
+            }
+            else if (labelCheckTianJia.Visible && labelCheckTianJia.ForeColor == Color.Blue)
+            {
+                if(MessageBox.Show("确定添加吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                {
+                    TianJia();
+                }
+            }
+            else
+            {
+                MessageBox.Show("未添加。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
