@@ -132,7 +132,7 @@
             // labelCheckBeiFen
             // 
             resources.ApplyResources(labelCheckBeiFen, "labelCheckBeiFen");
-            labelCheckBeiFen.ForeColor = Color.Green;
+            labelCheckBeiFen.ForeColor = Color.Red;
             labelCheckBeiFen.Name = "labelCheckBeiFen";
             // 
             // linkLabelAbout
