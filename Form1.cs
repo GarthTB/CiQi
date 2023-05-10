@@ -123,7 +123,7 @@ namespace 词器
             //如果需要备份，没有备份，就弹框确认
         }
 
-        //五个用于检查的函数
+        //四个用于检查的函数
         private List<string> GetQuanMa(string Ci)//获取词组的所有全码，无重复（输入参数已排除所有错误）
         {
             List<string> BianMa = new();//词组的所有可能编码
@@ -131,8 +131,8 @@ namespace 词器
             List<string> Ma2 = new();//第二个字的所有编码（前三码）
             List<string> Ma3 = new();//第三个字的所有编码（前三码）
             List<string> Ma4 = new();//最后一字的所有编码（前三码）
-            StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma = null;//ReadLine中的每一行
+            using StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
+            string? Zi_Ma = null;//字码流中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
@@ -226,8 +226,6 @@ namespace 词器
                     }
                 }
             }
-            DanZiStream.Close();
-            DanZiStream.Dispose();
             return BianMa;
         }
 
@@ -246,15 +244,15 @@ namespace 词器
         private bool AllInDanZi(string Ci)//检查编码用字是否全在DanZi中（输入参数必须大于1码）
         {
             bool n1 = false, n2 = false, n3 = false, n4 = false;//在DanZi中则计真
-            StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
-            string? Zi_Ma = null;//ReadLine中的每一行
+            using StreamReader DanZiStream = new(DanZiLuJing, Encoding.Default);
+            string? Zi_Ma = null;//字码流中的每一行
             if (Ci.Length == 2)
             {
                 while ((Zi_Ma = DanZiStream.ReadLine()) != null)
                 {
                     if (Zi_Ma[..1] == Ci[..1]) { n1 = true; }
                     if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
-                    if (n1 && n2) { DanZiStream.Close(); DanZiStream.Dispose(); return true; }
+                    if (n1 && n2) { return true; }
                 }
             }
             else if (Ci.Length == 3)
@@ -264,7 +262,7 @@ namespace 词器
                     if (Zi_Ma[..1] == Ci[..1]) { n1 = true; }
                     if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
                     if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n3 = true; }
-                    if (n1 && n2 && n3) { DanZiStream.Close(); DanZiStream.Dispose(); return true; }
+                    if (n1 && n2 && n3) { return true; }
                 }
             }
             else
@@ -275,66 +273,44 @@ namespace 词器
                     if (Zi_Ma[..1] == Ci.Substring(1, 1)) { n2 = true; }
                     if (Zi_Ma[..1] == Ci.Substring(2, 1)) { n3 = true; }
                     if (Zi_Ma[..1] == Ci[^1..]) { n4 = true; }
-                    if (n1 && n2 && n3 && n4) { DanZiStream.Close(); DanZiStream.Dispose(); return true; }
+                    if (n1 && n2 && n3 && n4) { return true; }
                 }
             }
-            DanZiStream.Close();
-            DanZiStream.Dispose();
             return false;
         }
 
-        private bool YiYouTiaoMu(string Ci, string Ma)//检查该条目是否已在CiZu中
+        private string CuoWuXinXi(string Ci, string Ma)//检查四个问题并返回代号
         {
-            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            string? Ci_Ma = null;//ReadLine中的每一行
+            //检查该条目是否已在CiZu中（返回“条”）
+            //否则：检查该词是否已在CiZu中（返回“词”）
+            //     检查该码是否已在CiZu中（返回“码”）
+            //     否则：检查是否有更短空码（返回“短”）
+            string CuoWuXinXi = string.Empty;
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词码流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
                 if (Ci_Ma == Ci + "\t" + Ma)
                 {
-                    CiZuStream.Close();
-                    CiZuStream.Dispose();
-                    return true;
+                    CuoWuXinXi += "条";
                 }
-            }
-            CiZuStream.Close();
-            CiZuStream.Dispose();
-            return false;
-        }
-
-        private bool YiYouCi(string Ci, string Ma)//检查该条目是否已在CiZu中
-        {
-            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            string? Ci_Ma = null;//ReadLine中的每一行
-            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
-            {
-                if (Ci_Ma == Ci + "\t")
+                else
                 {
-                    CiZuStream.Close();
-                    CiZuStream.Dispose();
-                    return true;
+                    if (Ci_Ma.StartsWith(Ci + "\t"))
+                    {
+                        CuoWuXinXi += "词";
+                    }
+                    if (Ci_Ma.EndsWith("\t" + Ma))
+                    {
+                        CuoWuXinXi += "码";
+                    }
+                    else if (Ci_Ma.EndsWith("\t" + Ma[..^1]))
+                    {
+                        CuoWuXinXi += "短";
+                    }
                 }
             }
-            CiZuStream.Close();
-            CiZuStream.Dispose();
-            return false;
-        }
-
-        private bool KongMa(string Ma)//检查该码是否为空码
-        {
-            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            string? Ci_Ma = null;//ReadLine中的每一行
-            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
-            {
-                if (Ci_Ma.Contains("\t" + Ma))
-                {
-                    CiZuStream.Close();
-                    CiZuStream.Dispose();
-                    return false;
-                }
-            }
-            CiZuStream.Close();
-            CiZuStream.Dispose();
-            return true;
+            return CuoWuXinXi;
         }
 
         //加词页的操作
@@ -342,18 +318,11 @@ namespace 词器
 
         private void JianChaTianJia()
         {
+            //清空检查器
             //已有条目禁止添加
-            //  已有词提醒，有更短空码提醒
-            //    多码可选提示，不是空码提示
-            //      没有提示就显示勾勾没问题
-            if (YiYouTiaoMu(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text))
-            {
-
-            }
-            else
-            {
-
-            }
+            //  多码可选提示，已有词提示，码位被占提示，有更短空码提示
+            //  没有提示就显示勾勾没问题
+            labelCheckTianJia.Text = CuoWuXinXi(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text);
         }
 
         private void textBoxTianJiaCi_TextChanged(object sender, EventArgs e)
