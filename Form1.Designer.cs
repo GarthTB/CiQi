@@ -35,7 +35,6 @@
             linkLabelAbout = new LinkLabel();
             linkLabelHelp = new LinkLabel();
             buttonBeiFen = new Button();
-            buttonGengXin = new Button();
             checkBoxBuYaoBeiFen = new CheckBox();
             textBoxBeiFenMuLu = new TextBox();
             buttonBeiFenMuLu = new Button();
@@ -118,7 +117,6 @@
             tabPageHome.Controls.Add(linkLabelAbout);
             tabPageHome.Controls.Add(linkLabelHelp);
             tabPageHome.Controls.Add(buttonBeiFen);
-            tabPageHome.Controls.Add(buttonGengXin);
             tabPageHome.Controls.Add(checkBoxBuYaoBeiFen);
             tabPageHome.Controls.Add(textBoxBeiFenMuLu);
             tabPageHome.Controls.Add(buttonBeiFenMuLu);
@@ -155,13 +153,6 @@
             buttonBeiFen.Name = "buttonBeiFen";
             buttonBeiFen.UseVisualStyleBackColor = true;
             buttonBeiFen.Click += buttonBeiFen_Click;
-            // 
-            // buttonGengXin
-            // 
-            resources.ApplyResources(buttonGengXin, "buttonGengXin");
-            buttonGengXin.Name = "buttonGengXin";
-            buttonGengXin.UseVisualStyleBackColor = true;
-            buttonGengXin.Click += buttonGengXin_Click;
             // 
             // checkBoxBuYaoBeiFen
             // 
@@ -601,7 +592,6 @@
         private LinkLabel linkLabelAbout;
         private LinkLabel linkLabelHelp;
         private Button buttonBeiFen;
-        private Button buttonGengXin;
         private OpenFileDialog openFileDialog;
         private FolderBrowserDialog folderBrowserDialog;
         private Label labelCheckBeiFen;

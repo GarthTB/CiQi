@@ -13,9 +13,10 @@ namespace 词器
             InitializeComponent();
         }
 
-        //两个词库的绝对路径
-        private string CiZuLuJing;//词组的绝对路径
-        private string DanZiLuJing;//单字的绝对路径
+        //词库和备份的绝对路径
+        private string CiZuLuJing;//词组文件的绝对路径
+        private string DanZiLuJing;//单字文件的绝对路径
+        private string BeiFenLuJing;//备份词库的绝对路径
 
         private void Formmain_Load(object sender, EventArgs e)
         {
@@ -30,7 +31,7 @@ namespace 词器
             }
             else
             {
-                if (MessageBox.Show("未能自动找到词库！\n请将此程序的文件夹放在小狼毫的用户文件夹下!\n且用户文件夹应包含以下两个文件：\nxkjd6.cizu.dict.yaml\nxkjd6.danzi.dict.yaml\n\n点击确定退出程序，点击取消手动选择词库目录。", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Error) == DialogResult.OK)
+                if (MessageBox.Show("未能自动找到词库！\r\n请将此程序的文件夹放在小狼毫的用户文件夹下!\r\n且用户文件夹应包含以下两个文件：\r\nxkjd6.cizu.dict.yaml\r\nxkjd6.danzi.dict.yaml\r\n\r\n点击确定退出程序，点击取消手动选择词库目录。", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Error) == DialogResult.OK)
                 {
                     System.Environment.Exit(0);
                 }
@@ -41,9 +42,15 @@ namespace 词器
         private void tabControlmain_Click(object sender, EventArgs e)
         {
             //不载入词库目录就不能离开这个tabpage
+            //没有选择不要备份且没有备份就不能离开这个tabpage
             if (textBoxCiKuMuLu.Text == string.Empty && tabControlmain.SelectedTab != tabPageHome)
             {
                 MessageBox.Show("请先选择词库目录。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tabControlmain.SelectedTab = tabPageHome;
+            }
+            else if (!checkBoxBuYaoBeiFen.Checked && labelCheckBeiFen.ForeColor == Color.Red && tabControlmain.SelectedTab != tabPageHome)
+            {
+                MessageBox.Show("请先备份，再进行维护。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tabControlmain.SelectedTab = tabPageHome;
             }
         }
@@ -72,10 +79,11 @@ namespace 词器
         private void buttonBeiFenMuLu_Click(object sender, EventArgs e)
         {
             //选择备份目录
-            //  如果选到了就在textbox里显示
+            //  如果选到了就在textbox里显示，并载入绝对路径
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 textBoxBeiFenMuLu.Text = folderBrowserDialog.SelectedPath;
+                BeiFenLuJing = textBoxBeiFenMuLu.Text + @"\xkjd6.cizu.dict(backup).yaml";
             }
         }
 
@@ -92,15 +100,20 @@ namespace 词器
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
         {
-            //如果被勾选上就禁用两个按钮、备份框和检查器
+            //如果被勾选上就提示风险
+            //   无视风险则禁用两个按钮、备份框和检查器
             //如果取消勾选就恢复两个按钮、备份框和检查器
             if (checkBoxBuYaoBeiFen.Checked)
             {
-                buttonBeiFenMuLu.Enabled = false;
-                buttonBeiFen.Enabled = false;
-                textBoxBeiFenMuLu.Enabled = false;
-                textBoxBeiFenMuLu.BackColor = SystemColors.Control;
-                labelCheckBeiFen.Enabled = false;
+                if (MessageBox.Show("词库的维护操作会直接编辑原词库文件。确定不备份吗？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                {
+                    buttonBeiFenMuLu.Enabled = false;
+                    buttonBeiFen.Enabled = false;
+                    textBoxBeiFenMuLu.Enabled = false;
+                    textBoxBeiFenMuLu.BackColor = SystemColors.Control;
+                    labelCheckBeiFen.Enabled = false;
+                }
+                else { checkBoxBuYaoBeiFen.Checked = false; }
             }
             else
             {
@@ -114,17 +127,27 @@ namespace 词器
 
         private void buttonBeiFen_Click(object sender, EventArgs e)
         {
-            //执行备份
+            //如果路径不为空就执行备份并更新检查器
+            //否则提示选择路径
+            if (BeiFenLuJing != null)
+            {
+                using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+                using StreamWriter BeiFenStream = new(BeiFenLuJing);
+                string? Ci_Ma = null;//词组流中的每一行
+                while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+                {
+                    BeiFenStream.WriteLine(Ci_Ma);
+                }
+                labelCheckBeiFen.ForeColor = Color.Green;
+                labelCheckBeiFen.Text = "√已备份";
+            }
+            else
+            {
+                MessageBox.Show("请先选择备份目录。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void buttonGengXin_Click(object sender, EventArgs e)
-        {
-            //如果勾选了不要备份，就直接更新
-            //如果需要备份，已经备份，就直接更新
-            //如果需要备份，没有备份，就弹框确认
-        }
-
-        //五个用于检查的函数
+        //七个用于检查的函数
         private List<string> GetQuanMa(string Ci)//获取词组的所有全码，无重复（输入参数已排除所有错误）
         {
             List<string> BianMa = new();//词组的所有可能编码
@@ -450,32 +473,6 @@ namespace 词器
         private void TianJia()
         {
             //将词组加入CiZu并写日志
-            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
-            using StreamWriter NewCiZuStream = new(textBoxCiKuMuLu.Text + @"\xkjd6.cizu.dict(new).yaml");
-            string? Ci_Ma = null;//词组流中的每一行
-            string[] TempArray = new string[2];//用来给条目排序的缓存数组
-            string[] SortedTempArray = new string[2];//排序后的缓存数组
-            TempArray[1] = comboBoxTianJiaMa.Text;//将要加的码作为数组的第二个元素
-            for (int i = 0; i < 5; i++)//先把文件头写了
-            {
-                NewCiZuStream.WriteLine(CiZuStream.ReadLine());
-            }
-            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
-            {
-                TempArray[0] = Ci_Ma.Split("\t")[1];//取出这一行的码作为数组的第一个元素
-                SortedTempArray = TempArray;
-                Array.Sort(SortedTempArray);
-                if (TempArray[0] == SortedTempArray[0])
-                {
-                    NewCiZuStream.WriteLine(Ci_Ma);
-                }
-                else
-                {
-                    NewCiZuStream.WriteLine(textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text);
-                    NewCiZuStream.WriteLine(Ci_Ma);
-                }
-            }
-            richTextBoxLog.Text += textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text + "\t添加\t" + labelCheckTianJia.Text + "\r\n";
         }
 
         private void buttonTianJia_Click(object sender, EventArgs e)
@@ -489,7 +486,7 @@ namespace 词器
             }
             else if (labelCheckTianJia.Visible && labelCheckTianJia.ForeColor == Color.Blue)
             {
-                if(MessageBox.Show("确定添加吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                if (MessageBox.Show("确定添加吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
                 {
                     TianJia();
                 }
