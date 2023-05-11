@@ -149,7 +149,7 @@ namespace 词器
             }
         }
 
-        //七个用于检查的函数
+        //八个用于检查的函数
         private List<string> GetQuanMa(string Ci)//获取词组的所有全码，无重复（输入参数已排除所有错误）
         {
             List<string> BianMa = new();//词组的所有可能编码
@@ -361,6 +361,26 @@ namespace 词器
             return true;
         }
 
+        private bool XinMaZaiQian(string XinMa, string JiuMa)//输入新码和旧码，判断新码是否应该排在前
+        {
+            //如果新码与旧码相同，旧码在前
+            //如果新码比旧码长且以旧码开头，旧码在前
+            //如果旧码比新码长且以新码开头，新码在前
+            //其他情况逐个比较字符的ascii码
+            if (XinMa == JiuMa) { return false; }
+            else if (XinMa.Length > JiuMa.Length && XinMa.StartsWith(JiuMa)) { return false; }
+            else if (JiuMa.Length > XinMa.Length && JiuMa.StartsWith(XinMa)) { return true; }
+            else
+            {
+                for (int n = 0; n < XinMa.Length && n < JiuMa.Length; n++)
+                {
+                    if (XinMa[n] < JiuMa[n]) { return true; }
+                    else if (XinMa[n] > JiuMa[n]) { return false; }
+                }
+                return true;//实际用不到的，只是用来让IDE不要再报错了的语句。
+            }
+        }
+
         //加词页的操作
         private List<string> QuanMa = new();//添加词的所有全码
 
@@ -469,27 +489,6 @@ namespace 词器
                     }
                 }
                 comboBoxTianJiaMa.SelectedIndex = 0;
-            }
-        }
-
-        private bool XinMaZaiQian(string XinMa, string JiuMa)//输入新码和旧码，判断是否新码应该排在前
-        {
-            //如果新码与旧码相同，旧码在前
-            //如果新码比旧码长且包含旧码，旧码在前
-            //如果旧码比新码长且包含新码，新码在前
-            //其他情况逐个比较字符的ascii码
-            if (XinMa == JiuMa) { return false; }
-            else if (XinMa.Length > JiuMa.Length && XinMa.Contains(JiuMa)) { return false; }
-            else if (JiuMa.Length > XinMa.Length && JiuMa.Contains(XinMa)) { return true; }
-            else
-            {
-                for (int n = 0; n < XinMa.Length && n < JiuMa.Length; n++)
-                {
-                    if (XinMa[n] < JiuMa[n]) { return true; }
-                    else if (XinMa[n] > JiuMa[n]) { return false; }
-                    else continue;
-                }
-                return false;//实际用不到的，只是用来让IDE不要再报错了的语句。
             }
         }
 
