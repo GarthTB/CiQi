@@ -381,7 +381,7 @@ namespace 词器
             }
         }
 
-        //加词页的操作
+        //添加页的操作
         private List<string> QuanMa = new();//添加词的所有全码
 
         private void JianChaTianJia()
@@ -519,7 +519,8 @@ namespace 词器
             }
             NewCiZuStream.Dispose();//写入完成
             richTextBoxLog.Text += textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text + "\t添加\t" + labelCheckTianJia.Text + "\r\n";
-            JianChaTianJia();//防止再次加入同一词
+            labelCheckTianJia.ForeColor = Color.Red;//防止再次加入同一词
+            labelCheckTianJia.Text = "×已有词";
         }
 
         private void buttonTianJia_Click(object sender, EventArgs e)
@@ -542,6 +543,14 @@ namespace 词器
             {
                 MessageBox.Show("未添加。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        //删除页的操作
+        private void textBoxShanChuCi_TextChanged(object sender, EventArgs e)
+        {
+            //清空combobox里的码
+            //  如果textbox为空就关掉检查
+            //  如果词库无该词就报错
         }
     }
 }

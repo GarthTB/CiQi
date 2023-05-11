@@ -309,6 +309,7 @@
             resources.ApplyResources(textBoxShanChuCi, "textBoxShanChuCi");
             textBoxShanChuCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxShanChuCi.Name = "textBoxShanChuCi";
+            textBoxShanChuCi.TextChanged += textBoxShanChuCi_TextChanged;
             // 
             // labelShanChuCi
             // 
