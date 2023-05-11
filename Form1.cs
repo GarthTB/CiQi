@@ -90,12 +90,14 @@ namespace 词器
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //弹出帮助
+            //每个面板的主要作用、代号含义
             //仅支持由DanZi中的字组成的词组
         }
 
         private void linkLabelAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //弹出关于
+            //名字、版本、作者、源码链接
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -470,9 +472,55 @@ namespace 词器
             }
         }
 
+        private bool XinMaZaiQian(string XinMa, string JiuMa)//输入新码和旧码，判断是否新码应该排在前
+        {
+            //如果新码与旧码相同，旧码在前
+            //如果新码比旧码长且包含旧码，旧码在前
+            //如果旧码比新码长且包含新码，新码在前
+            //其他情况逐个比较字符的ascii码
+            if (XinMa == JiuMa) { return false; }
+            else if (XinMa.Length > JiuMa.Length && XinMa.Contains(JiuMa)) { return false; }
+            else if (JiuMa.Length > XinMa.Length && JiuMa.Contains(XinMa)) { return true; }
+            else
+            {
+                for (int n = 0; n < XinMa.Length && n < JiuMa.Length; n++)
+                {
+                    if (XinMa[n] < JiuMa[n]) { return true; }
+                    else if (XinMa[n] > JiuMa[n]) { return false; }
+                    else continue;
+                }
+                return false;//实际用不到的，只是用来让IDE不要再报错了的语句。
+            }
+        }
+
         private void TianJia()
         {
             //将词组加入CiZu并写日志
+            List<string> Ci_Malist = new();//用于分装词库的每一行
+            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词库装进list
+            {
+                Ci_Malist.Add(Ci_Ma);
+            }
+            CiZuStream.Dispose();//载入完成
+            File.Delete(CiZuLuJing);
+            for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
+            {
+                if (XinMaZaiQian(comboBoxTianJiaMa.Text, Ci_Malist[n].Split("\t")[1]))
+                {
+                    Ci_Malist.Insert(n, textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text);
+                    break;
+                }
+            }
+            StreamWriter NewCiZuStream = new(CiZuLuJing);
+            for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
+            {
+                NewCiZuStream.WriteLine(Ci_Malist[n]);
+            }
+            NewCiZuStream.Dispose();//写入完成
+            richTextBoxLog.Text += textBoxTianJiaCi.Text + "\t" + comboBoxTianJiaMa.Text + "\t添加\t" + labelCheckTianJia.Text + "\r\n";
+            JianChaTianJia();//防止再次加入同一词
         }
 
         private void buttonTianJia_Click(object sender, EventArgs e)

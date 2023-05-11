@@ -89,13 +89,13 @@
     <value>NoControl</value>
   </data>
   <data name="linkLabelAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 252</value>
+    <value>89, 252</value>
   </data>
   <data name="linkLabelAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
   <data name="linkLabelAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 24</value>
+    <value>65, 24</value>
   </data>
   <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -113,7 +113,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="linkLabelHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 24</value>
+    <value>65, 24</value>
   </data>
   <data name="linkLabelHelp.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
