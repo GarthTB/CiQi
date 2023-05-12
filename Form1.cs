@@ -103,7 +103,7 @@ namespace 词器
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
         {
             //如果被勾选上就提示风险
-            //   无视风险则禁用两个按钮、备份框和检查器
+            //  无视风险就禁用两个按钮、备份框和检查器
             //如果取消勾选就恢复两个按钮、备份框和检查器
             if (checkBoxBuYaoBeiFen.Checked)
             {
@@ -691,6 +691,57 @@ namespace 词器
             else
             {
                 MessageBox.Show("未删除。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //修改页的操作
+        private void radioButtonXiuGaiCi_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonXiuGaiCi.Checked)//如果选择改词
+            {
+                textBoxXiuGaiCi.Clear();
+                textBoxXiuGaiMa.Clear();
+                comboBoxYuan.Text = string.Empty;
+                comboBoxYuan.Items.Clear();
+                labelXiuGaiCi.Text = "改成的词";
+                labelXiuGaiMa.Text = "原来的码";
+                labelYuan.Text = "原来的词";
+            }
+            else//如果选择改码
+            {
+                textBoxXiuGaiCi.Clear();
+                textBoxXiuGaiMa.Clear();
+                comboBoxYuan.Text = string.Empty;
+                comboBoxYuan.Items.Clear();
+                labelXiuGaiCi.Text = "原来的词";
+                labelXiuGaiMa.Text = "改成的码";
+                labelYuan.Text = "原来的码";
+            }
+        }
+
+        private void textBoxXiuGaiCi_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxXiuGaiCi.Text == string.Empty)//如果清空了就关掉检查器
+            {
+                labelCheckXiuGai.Visible = false;
+            }
+            else
+            {
+                if (radioButtonXiuGaiCi.Checked)//如果选择改词
+                {
+                    //如果未输入原词就报错
+                    //  如果输入了非中文，或码长小于2就提醒
+                    //  如果编码用字不在DanZi中就提醒
+                    //    执行检查（多选、匹配）
+                }
+                else//如果选择改码
+                {
+                    //清空combobox里的码
+                    //  如果词库无该词就报错
+                    //    获取词的所有编码，放进combobox
+                    //    执行检查
+
+                }
             }
         }
     }

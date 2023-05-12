@@ -348,6 +348,7 @@
             radioButtonXiuGaiCi.Name = "radioButtonXiuGaiCi";
             radioButtonXiuGaiCi.TabStop = true;
             radioButtonXiuGaiCi.UseVisualStyleBackColor = true;
+            radioButtonXiuGaiCi.CheckedChanged += radioButtonXiuGaiCi_CheckedChanged;
             // 
             // textBoxXiuGaiMa
             // 
@@ -388,6 +389,7 @@
             resources.ApplyResources(textBoxXiuGaiCi, "textBoxXiuGaiCi");
             textBoxXiuGaiCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxXiuGaiCi.Name = "textBoxXiuGaiCi";
+            textBoxXiuGaiCi.TextChanged += textBoxXiuGaiCi_TextChanged;
             // 
             // labelXiuGaiCi
             // 
