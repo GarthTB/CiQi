@@ -149,7 +149,7 @@ namespace 词器
             }
         }
 
-        //八个用于检查的函数
+        //九个用于检查的函数
         private List<string> GetQuanMa(string Ci)//获取词组的所有全码，无重复（输入参数已排除所有错误）
         {
             List<string> BianMa = new();//词组的所有可能编码
@@ -308,6 +308,10 @@ namespace 词器
         private bool YiYouTiaoMu(string Ci, string Ma)//检查该条目是否已在CiZu中
         {
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            for (int n = 0; n < 5; n++)//跳过文件头
+            {
+                CiZuStream.ReadLine();
+            }
             string? Ci_Ma = null;//词组流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
@@ -322,6 +326,10 @@ namespace 词器
         private bool YiYouCi(string Ci)//检查该词是否已在CiZu中
         {
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            for (int n = 0; n < 5; n++)//跳过文件头
+            {
+                CiZuStream.ReadLine();
+            }
             string? Ci_Ma = null;//词组流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
@@ -336,6 +344,10 @@ namespace 词器
         private bool YiYouMa(string Ma)//检查该码是否已在CiZu中
         {
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            for (int n = 0; n < 5; n++)//跳过文件头
+            {
+                CiZuStream.ReadLine();
+            }
             string? Ci_Ma = null;//词组流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
@@ -350,6 +362,10 @@ namespace 词器
         private bool GengDuanKongMa(string Ma)//检查是否有更短空码
         {
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            for (int n = 0; n < 5; n++)//跳过文件头
+            {
+                CiZuStream.ReadLine();
+            }
             string? Ci_Ma = null;//词组流中的每一行
             while ((Ci_Ma = CiZuStream.ReadLine()) != null)
             {
@@ -359,6 +375,24 @@ namespace 词器
                 }
             }
             return true;
+        }
+
+        private bool XuYaoBuWei(string Ma)//判断删除该码后是否需要补位
+        {
+            using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            for (int n = 0; n < 5; n++)//跳过文件头
+            {
+                CiZuStream.ReadLine();
+            }
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)
+            {
+                if (Ma.Length < Ci_Ma.Split("\t")[1].Length && Ci_Ma.Split("\t")[1].StartsWith(Ma))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private bool XinMaZaiQian(string XinMa, string JiuMa)//输入新码和旧码，判断新码是否应该排在前
@@ -384,53 +418,13 @@ namespace 词器
         //添加页的操作
         private List<string> QuanMa = new();//添加词的所有全码
 
-        private void JianChaTianJia()
-        {
-            //清空检查器
-            //已有条目报错
-            //  多码可选提示，已有词提示，码位被占提示，有更短空码提示
-            //  没有提示就显示勾勾没问题
-            labelCheckTianJia.Text = string.Empty;
-            if (YiYouTiaoMu(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text))
-            {
-                labelCheckTianJia.ForeColor = Color.Red;
-                labelCheckTianJia.Text = "×已有词";
-            }
-            else
-            {
-                labelCheckTianJia.ForeColor = Color.Blue;
-                labelCheckTianJia.Text = "!";
-                if (comboBoxTianJiaMa.Items.Count > 1)
-                {
-                    labelCheckTianJia.Text += " 多";
-                }
-                if (YiYouCi(textBoxTianJiaCi.Text))
-                {
-                    labelCheckTianJia.Text += " 已";
-                }
-                if (YiYouMa(comboBoxTianJiaMa.Text))
-                {
-                    labelCheckTianJia.Text += " 占";
-                }
-                if (comboBoxTianJiaMa.Text.Length > 3 && GengDuanKongMa(comboBoxTianJiaMa.Text))
-                {
-                    labelCheckTianJia.Text += " 短";
-                }
-                if (labelCheckTianJia.Text == "!")
-                {
-                    labelCheckTianJia.ForeColor = Color.Green;
-                    labelCheckTianJia.Text = "√没问题";
-                }
-            }
-        }
-
         private void textBoxTianJiaCi_TextChanged(object sender, EventArgs e)
         {
             //清空全码list和combobox里的码
             //  如果textbox为空就关掉检查
             //  如果输入了非中文，或码长小于2就报错
             //  如果编码用字不在DanZi中就报错
-            //    获取词的编码，根据指定码长切割，放进combobox
+            //    获取词的所有编码，根据指定码长切割，放进combobox
             //    开启检查器，以便combobox执行检查
             QuanMa.Clear();
             comboBoxTianJiaMa.Text = string.Empty;
@@ -469,7 +463,44 @@ namespace 词器
         private void comboBoxTianJiaMa_SelectedIndexChanged(object sender, EventArgs e)
         {
             //如果全码list非空就执行检查
-            if (QuanMa.Any()) { JianChaTianJia(); }
+            //检查：
+            //已有条目报错
+            //  多码可选提示，已有词提示，码位被占提示，有更短空码提示
+            //  没有提示就显示勾勾没问题
+            if (QuanMa.Any())
+            {
+                if (YiYouTiaoMu(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text))
+                {
+                    labelCheckTianJia.ForeColor = Color.Red;
+                    labelCheckTianJia.Text = "×已有词";
+                }
+                else
+                {
+                    labelCheckTianJia.ForeColor = Color.Blue;
+                    labelCheckTianJia.Text = "!";
+                    if (comboBoxTianJiaMa.Items.Count > 1)
+                    {
+                        labelCheckTianJia.Text += " 多";
+                    }
+                    if (YiYouCi(textBoxTianJiaCi.Text))
+                    {
+                        labelCheckTianJia.Text += " 已";
+                    }
+                    if (YiYouMa(comboBoxTianJiaMa.Text))
+                    {
+                        labelCheckTianJia.Text += " 占";
+                    }
+                    if (comboBoxTianJiaMa.Text.Length > 3 && GengDuanKongMa(comboBoxTianJiaMa.Text))
+                    {
+                        labelCheckTianJia.Text += " 短";
+                    }
+                    if (labelCheckTianJia.Text == "!")
+                    {
+                        labelCheckTianJia.ForeColor = Color.Green;
+                        labelCheckTianJia.Text = "√没问题";
+                    }
+                }
+            }
         }
 
         private void numericUpDownTianJiaMaChang_ValueChanged(object sender, EventArgs e)
@@ -551,6 +582,116 @@ namespace 词器
             //清空combobox里的码
             //  如果textbox为空就关掉检查
             //  如果词库无该词就报错
+            //    获取词的所有编码，放进combobox
+            //    开启检查器，以便combobox执行检查
+            comboBoxShanChuMa.Text = string.Empty;
+            comboBoxShanChuMa.Items.Clear();
+            if (textBoxShanChuCi.Text == string.Empty)
+            {
+                labelCheckShanChu.Visible = false;
+            }
+            else if (!YiYouCi(textBoxShanChuCi.Text))
+            {
+                labelCheckShanChu.Visible = true;
+                labelCheckShanChu.ForeColor = Color.Red;
+                labelCheckShanChu.Text = "×无该词";
+            }
+            else
+            {
+                using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+                for (int n = 0; n < 5; n++)//跳过文件头
+                {
+                    CiZuStream.ReadLine();
+                }
+                string? Ci_Ma = null;//词组流中的每一行
+                while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词的所有编码装进combobox
+                {
+                    if (Ci_Ma.StartsWith(textBoxShanChuCi.Text + "\t"))
+                    {
+                        comboBoxShanChuMa.Items.Add(Ci_Ma.Split("\t")[1]);
+                    }
+                }
+                comboBoxShanChuMa.SelectedIndex = 0;
+                labelCheckShanChu.Visible = true;
+            }
+        }
+
+        private void comboBoxShanChuMa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //如果此combobox非空就执行检查
+            //检查：
+            //已删除该码报错
+            //需要补位提示
+            //没有提示就显示勾勾没问题
+            if (comboBoxShanChuMa.Items.Count != 0)
+            {
+                if (!YiYouTiaoMu(textBoxShanChuCi.Text, comboBoxShanChuMa.Text))
+                {
+                    labelCheckShanChu.ForeColor = Color.Red;
+                    labelCheckShanChu.Text = "×已删除";
+                }
+                else if (XuYaoBuWei(comboBoxShanChuMa.Text))
+                {
+                    labelCheckShanChu.ForeColor = Color.Blue;
+                    labelCheckShanChu.Text = "!需补位";
+                }
+                else
+                {
+                    labelCheckShanChu.ForeColor = Color.Green;
+                    labelCheckShanChu.Text = "√没问题";
+                }
+            }
+        }
+
+        private void ShanChu()
+        {
+            //将词组移出CiZu并写日志
+            List<string> Ci_Malist = new();//用于分装词库的每一行
+            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词库装进list
+            {
+                Ci_Malist.Add(Ci_Ma);
+            }
+            CiZuStream.Dispose();//载入完成
+            File.Delete(CiZuLuJing);
+            for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
+            {
+                if (Ci_Malist[n] == textBoxShanChuCi.Text + "\t" + comboBoxShanChuMa.Text)
+                {
+                    Ci_Malist.RemoveAt(n);
+                    break;
+                }
+            }
+            StreamWriter NewCiZuStream = new(CiZuLuJing);
+            for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
+            {
+                NewCiZuStream.WriteLine(Ci_Malist[n]);
+            }
+            NewCiZuStream.Dispose();//写入完成
+            richTextBoxLog.Text += textBoxShanChuCi.Text + "\t" + comboBoxShanChuMa.Text + "\t删除\t" + labelCheckShanChu.Text + "\r\n";
+            labelCheckShanChu.ForeColor = Color.Red;//防止再次加入同一词
+            labelCheckShanChu.Text = "×已删除";
+        }
+
+        private void buttonShanChu_Click(object sender, EventArgs e)
+        {
+            //检查没问题就删除
+            //检查有提示就弹框确认
+            //其他情况就不删除并弹框提示
+            if (labelCheckShanChu.Visible && labelCheckShanChu.ForeColor == Color.Green)
+            {
+                ShanChu();
+            }
+            else if (labelCheckShanChu.Visible && labelCheckShanChu.ForeColor == Color.Blue)
+            {
+                MessageBox.Show("该码删除后会有空位，请到修改页面用“改码”操作进行补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                ShanChu();
+            }
+            else
+            {
+                MessageBox.Show("未删除。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

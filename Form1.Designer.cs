@@ -285,6 +285,7 @@
             resources.ApplyResources(buttonShanChu, "buttonShanChu");
             buttonShanChu.Name = "buttonShanChu";
             buttonShanChu.UseVisualStyleBackColor = true;
+            buttonShanChu.Click += buttonShanChu_Click;
             // 
             // labelCheckShanChu
             // 
@@ -298,6 +299,7 @@
             comboBoxShanChuMa.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxShanChuMa.FormattingEnabled = true;
             comboBoxShanChuMa.Name = "comboBoxShanChuMa";
+            comboBoxShanChuMa.SelectedIndexChanged += comboBoxShanChuMa_SelectedIndexChanged;
             // 
             // labelShanChuMa
             // 

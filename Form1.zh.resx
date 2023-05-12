@@ -460,11 +460,11 @@
   <data name="labelCheckShanChu.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="labelCheckShanChu.Text" xml:space="preserve">
-    <value>√无补位</value>
-  </data>
   <data name="labelCheckShanChu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckShanChu.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBoxShanChuMa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
