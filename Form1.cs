@@ -421,19 +421,19 @@ namespace 词器
         private void textBoxTianJiaCi_TextChanged(object sender, EventArgs e)
         {
             //清空全码list和combobox里的码
-            //  如果textbox为空就关掉检查
-            //  如果输入了非中文，或码长小于2就报错
+            //  如果少于2个字就关掉检查
+            //  如果输入了非中文就报错
             //  如果编码用字不在DanZi中就报错
             //    获取词的所有编码，根据指定码长切割，放进combobox
             //    开启检查器，以便combobox执行检查
             QuanMa.Clear();
             comboBoxTianJiaMa.Text = string.Empty;
             comboBoxTianJiaMa.Items.Clear();
-            if (textBoxTianJiaCi.Text == string.Empty)
+            if (textBoxTianJiaCi.Text.Length < 2)
             {
                 labelCheckTianJia.Visible = false;
             }
-            else if (Regex.IsMatch(textBoxTianJiaCi.Text, "[^\u4e00-\u9fa5]") || textBoxTianJiaCi.Text.Length < 2)
+            else if (Regex.IsMatch(textBoxTianJiaCi.Text, "[^\u4e00-\u9fa5]"))
             {
                 labelCheckTianJia.Visible = true;
                 labelCheckTianJia.ForeColor = Color.Red;
@@ -463,10 +463,9 @@ namespace 词器
         private void comboBoxTianJiaMa_SelectedIndexChanged(object sender, EventArgs e)
         {
             //如果全码list非空就执行检查
-            //检查：
-            //已有条目报错
-            //  多码可选提示，已有词提示，码位被占提示，有更短空码提示
-            //  没有提示就显示勾勾没问题
+            //  已有条目报错
+            //    多码可选提示，已有词提示，码位被占提示，有更短空码提示
+            //    没有提示就显示勾勾没问题
             if (QuanMa.Any())
             {
                 if (YiYouTiaoMu(textBoxTianJiaCi.Text, comboBoxTianJiaMa.Text))
@@ -580,13 +579,13 @@ namespace 词器
         private void textBoxShanChuCi_TextChanged(object sender, EventArgs e)
         {
             //清空combobox里的码
-            //  如果textbox为空就关掉检查
+            //  如果小于2个字就关掉检查
             //  如果词库无该词就报错
             //    获取词的所有编码，放进combobox
             //    开启检查器，以便combobox执行检查
             comboBoxShanChuMa.Text = string.Empty;
             comboBoxShanChuMa.Items.Clear();
-            if (textBoxShanChuCi.Text == string.Empty)
+            if (textBoxShanChuCi.Text.Length < 2)
             {
                 labelCheckShanChu.Visible = false;
             }
@@ -619,10 +618,9 @@ namespace 词器
         private void comboBoxShanChuMa_SelectedIndexChanged(object sender, EventArgs e)
         {
             //如果此combobox非空就执行检查
-            //检查：
-            //已删除该码报错
-            //需要补位提示
-            //没有提示就显示勾勾没问题
+            //  已删除该码报错
+            //  需要补位提示
+            //  没有提示就显示勾勾没问题
             if (comboBoxShanChuMa.Items.Count != 0)
             {
                 if (!YiYouTiaoMu(textBoxShanChuCi.Text, comboBoxShanChuMa.Text))
@@ -685,7 +683,7 @@ namespace 词器
             }
             else if (labelCheckShanChu.Visible && labelCheckShanChu.ForeColor == Color.Blue)
             {
-                MessageBox.Show("该码删除后会有空位，请到修改页面用“改码”操作进行补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("该码删除后会有空位，请到改码页面进行补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 ShanChu();
             }
             else
@@ -694,55 +692,131 @@ namespace 词器
             }
         }
 
-        //修改页的操作
-        private void radioButtonXiuGaiCi_CheckedChanged(object sender, EventArgs e)
+        //改词页的操作
+        private void textBoxGaiCiCi_TextChanged(object sender, EventArgs e)
         {
-            if (radioButtonXiuGaiCi.Checked)//如果选择改词
+            //如果未选择原词就提醒
+            //如果少于2个字就关掉检查
+            //如果非中文就报错
+            //如果已有词就提示
+            //如果编码用字超出DanZi就提示
+            //否则检查新词是否和新码匹配
+            if (textBoxGaiCiCi.Text != string.Empty && comboBoxYuanCi.Text == string.Empty)
             {
-                textBoxXiuGaiCi.Clear();
-                textBoxXiuGaiMa.Clear();
-                comboBoxYuan.Text = string.Empty;
-                comboBoxYuan.Items.Clear();
-                labelXiuGaiCi.Text = "改成的词";
-                labelXiuGaiMa.Text = "原来的码";
-                labelYuan.Text = "原来的词";
+                MessageBox.Show("请先选择输入编码并选择原词，再输入要改成的词。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                textBoxGaiCiCi.Text = string.Empty;
             }
-            else//如果选择改码
+            else if (textBoxGaiCiCi.Text.Length < 2)
             {
-                textBoxXiuGaiCi.Clear();
-                textBoxXiuGaiMa.Clear();
-                comboBoxYuan.Text = string.Empty;
-                comboBoxYuan.Items.Clear();
-                labelXiuGaiCi.Text = "原来的词";
-                labelXiuGaiMa.Text = "改成的码";
-                labelYuan.Text = "原来的码";
-            }
-        }
-
-        private void textBoxXiuGaiCi_TextChanged(object sender, EventArgs e)
-        {
-            if (textBoxXiuGaiCi.Text == string.Empty)//如果清空了就关掉检查器
-            {
-                labelCheckXiuGai.Visible = false;
+                labelCheckGaiCi.Visible = false;
             }
             else
             {
-                if (radioButtonXiuGaiCi.Checked)//如果选择改词
+                labelCheckGaiCi.Visible = true;
+                if (Regex.IsMatch(textBoxGaiCiCi.Text, "[^\u4e00-\u9fa5]"))
                 {
-                    //如果未输入原词就报错
-                    //  如果输入了非中文，或码长小于2就提醒
-                    //  如果编码用字不在DanZi中就提醒
-                    //    执行检查（多选、匹配）
+                    labelCheckGaiCi.ForeColor = Color.Red;
+                    labelCheckGaiCi.Text = "×无效词";
                 }
-                else//如果选择改码
+                else if (YiYouCi(textBoxGaiCiCi.Text))
                 {
-                    //清空combobox里的码
-                    //  如果词库无该词就报错
-                    //    获取词的所有编码，放进combobox
-                    //    执行检查
-
+                    labelCheckGaiCi.ForeColor = Color.Blue;
+                    labelCheckGaiCi.Text = "!已有词";
+                }
+                else if (!AllInDanZi(textBoxGaiCiCi.Text))
+                {
+                    labelCheckGaiCi.ForeColor = Color.Blue;
+                    labelCheckGaiCi.Text = "!生僻字";
+                }
+                else if (!CiMaMatch(textBoxGaiCiCi.Text, textBoxGaiCiMa.Text))
+                {
+                    labelCheckGaiCi.ForeColor = Color.Red;
+                    labelCheckGaiCi.Text = "×码不配";
+                }
+                else
+                {
+                    labelCheckGaiCi.ForeColor = Color.Green;
+                    labelCheckGaiCi.Text = "√没问题";
                 }
             }
+        }
+
+        private void textBoxGaiCiMa_TextChanged(object sender, EventArgs e)
+        {
+            //清空combobox里的词
+            //  如果码长小于3就关掉检查
+            //  如果输入了非小写英文就报错
+            //  如果词库无该码就报错
+            //    获取编码的所有词，放进combobox
+            //    开启检查器，以便combobox执行检查
+            comboBoxYuanCi.Text = string.Empty;
+            comboBoxYuanCi.Items.Clear();
+            if (textBoxGaiCiMa.Text.Length < 3)
+            {
+                labelCheckGaiCi.Visible = false;
+            }
+            else if (Regex.IsMatch(textBoxGaiCiMa.Text, "[^a-z]"))
+            {
+                MessageBox.Show("编码应全为英文小写字母。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxGaiCiMa.Text = string.Empty;
+            }
+            else if (!YiYouMa(textBoxGaiCiMa.Text))
+            {
+                labelCheckGaiCi.Visible = true;
+                labelCheckGaiCi.ForeColor = Color.Red;
+                labelCheckGaiCi.Text = "×无该码";
+            }
+            else
+            {
+                using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+                for (int n = 0; n < 5; n++)//跳过文件头
+                {
+                    CiZuStream.ReadLine();
+                }
+                string? Ci_Ma = null;//词组流中的每一行
+                while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将编码的所有词装进combobox
+                {
+                    if (Ci_Ma.EndsWith("\t" + textBoxGaiCiMa.Text))
+                    {
+                        comboBoxYuanCi.Items.Add(Ci_Ma.Split("\t")[0]);
+                    }
+                }
+                comboBoxYuanCi.SelectedIndex = 0;
+                labelCheckGaiCi.Visible = true;
+            }
+        }
+
+        private void comboBoxYuanCi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //如果此combobox非空就检查
+            //  已修改该码报错
+            //    多选提示
+            //    没有提示就显示勾勾没问题
+            if (comboBoxYuanCi.Items.Count != 0)
+            {
+                if (!YiYouTiaoMu(comboBoxYuanCi.Text, textBoxGaiCiMa.Text))
+                {
+                    labelCheckGaiCi.ForeColor = Color.Red;
+                    labelCheckGaiCi.Text = "×已修改";
+                }
+                else if (comboBoxYuanCi.Items.Count > 1)
+                {
+                    labelCheckGaiCi.ForeColor = Color.Blue;
+                    labelCheckGaiCi.Text = "!有多项";
+                }
+                else
+                {
+                    labelCheckGaiCi.ForeColor = Color.Green;
+                    labelCheckGaiCi.Text = "√没问题";
+                }
+            }
+        }
+
+        private void buttonGaiCi_Click(object sender, EventArgs e)
+        {
+            //检查没问题就添加
+            //检查有提示就弹框确认
+            //其他情况就不添加并弹框提示
         }
     }
 }
