@@ -696,7 +696,7 @@ namespace 词器
         {
             //如果未选择原词就提醒
             //如果少于2个字就关掉检查
-            //如果输入了非中文就报错
+            //如果输入了非中文或原词就报错
             //如果编码用字不在DanZi中就报错
             //如果码不配就报错
             //如果已有词就提示
@@ -713,7 +713,7 @@ namespace 词器
             else
             {
                 labelCheckGaiCi.Visible = true;
-                if (Regex.IsMatch(textBoxGaiCiCi.Text, "[^\u4e00-\u9fa5]"))
+                if (Regex.IsMatch(textBoxGaiCiCi.Text, "[^\u4e00-\u9fa5]") || textBoxGaiCiCi.Text == comboBoxYuanCi.Text)
                 {
                     labelCheckGaiCi.ForeColor = Color.Red;
                     labelCheckGaiCi.Text = "×无效词";
@@ -905,7 +905,7 @@ namespace 词器
         {
             //如果未选择原码就提醒
             //如果码长小于3就关掉检查
-            //如果输入了非小写英文就报错
+            //如果输入了非小写英文或原码就报错
             //如果码不配就报错
             //如果已有码就提示
             //如果有更短空码就提示
@@ -922,7 +922,7 @@ namespace 词器
             else
             {
                 labelCheckGaiMa.Visible = true;
-                if (Regex.IsMatch(textBoxGaiMaMa.Text, "[^a-z]"))
+                if (Regex.IsMatch(textBoxGaiMaMa.Text, "[^a-z]") || textBoxGaiMaMa.Text == comboBoxYuanMa.Text)
                 {
                     labelCheckGaiMa.ForeColor = Color.Red;
                     labelCheckGaiMa.Text = "×无效码";
