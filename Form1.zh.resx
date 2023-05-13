@@ -322,6 +322,12 @@
   <data name="labelCheckTianJia.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
+  <data name="labelCheckTianJia.ToolTip" xml:space="preserve">
+    <value>“占”：该码位已被其他词占用。
+“多”：添加的码有多项可选。
+“已”：词库中已有该词。
+“短”：有更短的空码。</value>
+  </data>
   <data name="labelCheckTianJia.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -867,6 +873,10 @@
   </data>
   <data name="labelCheckTiaoPinDuan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckTiaoPinDuan.ToolTip" xml:space="preserve">
+    <value>“占”：所有比该码更长的码都已被其他词占用。
+“多”：添加的码有多项可选。</value>
   </data>
   <data name="labelCheckTiaoPinDuan.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -5663,6 +5673,9 @@
         ////////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////8=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>词库维护工具</value>

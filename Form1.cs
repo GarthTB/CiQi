@@ -1,8 +1,5 @@
-using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace 词器
 {
@@ -95,6 +92,7 @@ namespace 词器
 
         private void linkLabelAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //自动复制链接
             //弹出关于
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
             MessageBox.Show("词器v0.1\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
@@ -910,6 +908,7 @@ namespace 词器
             //如果输入了非小写英文就报错
             //如果码不配就报错
             //如果已有码就提示
+            //如果有更短空码就提示
             //没有提示就显示勾勾没问题
             if (comboBoxYuanMa.Text == string.Empty)
             {
@@ -937,6 +936,11 @@ namespace 词器
                 {
                     labelCheckGaiMa.ForeColor = Color.Blue;
                     labelCheckGaiMa.Text = "!已有码";
+                }
+                else if (GengDuanKongMa(textBoxGaiMaMa.Text))
+                {
+                    labelCheckGaiMa.ForeColor = Color.Blue;
+                    labelCheckGaiMa.Text = "!更短空";
                 }
                 else
                 {
