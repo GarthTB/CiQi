@@ -98,7 +98,7 @@
     <value>65, 24</value>
   </data>
   <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="linkLabelAbout.Text" xml:space="preserve">
     <value>关于</value>
@@ -116,7 +116,7 @@
     <value>65, 24</value>
   </data>
   <data name="linkLabelHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="linkLabelHelp.Text" xml:space="preserve">
     <value>帮助</value>
@@ -158,7 +158,7 @@
     <value>110, 24</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="checkBoxBuYaoBeiFen.Text" xml:space="preserve">
     <value>不要备份</value>
@@ -326,7 +326,7 @@
     <value>False</value>
   </data>
   <data name="numericUpDownTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 253</value>
+    <value>98, 203</value>
   </data>
   <data name="numericUpDownTianJiaMaChang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -371,7 +371,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 249</value>
+    <value>12, 198</value>
   </data>
   <data name="labelTianJiaMaChang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -865,11 +865,11 @@
   <data name="labelCheckTiaoPinDuan.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 25</value>
   </data>
-  <data name="labelCheckTiaoPinDuan.Text" xml:space="preserve">
-    <value>√无重码</value>
-  </data>
   <data name="labelCheckTiaoPinDuan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckTiaoPinDuan.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBoxTiaoPinChangMa.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 201</value>
@@ -976,11 +976,11 @@
   <data name="labelCheckTiaoPinChang.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 25</value>
   </data>
-  <data name="labelCheckTiaoPinChang.Text" xml:space="preserve">
-    <value>√合规则</value>
-  </data>
   <data name="labelCheckTiaoPinChang.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="labelCheckTiaoPinChang.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBoxTiaoPinDuanMa.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 88</value>
@@ -1139,7 +1139,10 @@
     <value>364, 276</value>
   </data>
   <data name="openFileDialog.Filter" xml:space="preserve">
-    <value>星空键道6词库文件|*.yaml</value>
+    <value>词器日志文件(*.yaml)|*.yaml</value>
+  </data>
+  <data name="openFileDialog.Title" xml:space="preserve">
+    <value>选择日志文件</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>96, 96</value>

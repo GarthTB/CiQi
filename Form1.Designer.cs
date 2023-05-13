@@ -482,6 +482,7 @@
             comboBoxTiaoPinChangMa.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTiaoPinChangMa.FormattingEnabled = true;
             comboBoxTiaoPinChangMa.Name = "comboBoxTiaoPinChangMa";
+            comboBoxTiaoPinChangMa.SelectedIndexChanged += comboBoxTiaoPinChangMa_SelectedIndexChanged;
             // 
             // labelTiaoPinChangMa
             // 
@@ -493,6 +494,7 @@
             resources.ApplyResources(textBoxTiaoPinChangCi, "textBoxTiaoPinChangCi");
             textBoxTiaoPinChangCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTiaoPinChangCi.Name = "textBoxTiaoPinChangCi";
+            textBoxTiaoPinChangCi.TextChanged += textBoxTiaoPinChangCi_TextChanged;
             // 
             // labelTiaoPinChangCi
             // 
@@ -504,6 +506,7 @@
             resources.ApplyResources(buttonTiaoPin, "buttonTiaoPin");
             buttonTiaoPin.Name = "buttonTiaoPin";
             buttonTiaoPin.UseVisualStyleBackColor = true;
+            buttonTiaoPin.Click += buttonTiaoPin_Click;
             // 
             // labelCheckTiaoPinChang
             // 
@@ -550,12 +553,14 @@
             resources.ApplyResources(buttonImportLog, "buttonImportLog");
             buttonImportLog.Name = "buttonImportLog";
             buttonImportLog.UseVisualStyleBackColor = true;
+            buttonImportLog.Click += buttonImportLog_Click;
             // 
             // buttonExportLog
             // 
             resources.ApplyResources(buttonExportLog, "buttonExportLog");
             buttonExportLog.Name = "buttonExportLog";
             buttonExportLog.UseVisualStyleBackColor = true;
+            buttonExportLog.Click += buttonExportLog_Click;
             // 
             // richTextBoxLog
             // 
