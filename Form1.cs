@@ -534,7 +534,6 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            File.Delete(CiZuLuJing);
             for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
             {
                 if (XinMaZaiQian(comboBoxTianJiaMa.Text, Ci_Malist[n].Split("\t")[1]))
@@ -543,6 +542,7 @@ namespace 词器
                     break;
                 }
             }
+            File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
             for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
             {
@@ -653,7 +653,6 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            File.Delete(CiZuLuJing);
             for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
             {
                 if (Ci_Malist[n] == textBoxShanChuCi.Text + "\t" + comboBoxShanChuMa.Text)
@@ -662,6 +661,7 @@ namespace 词器
                     break;
                 }
             }
+            File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
             for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
             {
@@ -820,7 +820,6 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            File.Delete(CiZuLuJing);
             for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
             {
                 if (Ci_Malist[n] == comboBoxYuanCi.Text + "\t" + textBoxGaiCiMa.Text)
@@ -829,6 +828,7 @@ namespace 词器
                     break;
                 }
             }
+            File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
             for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
             {
@@ -983,7 +983,6 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            File.Delete(CiZuLuJing);
             int count = 0;//用来决定什么时候跳出循环
             for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
             {
@@ -999,6 +998,7 @@ namespace 词器
                 }
                 if (count == 2) break;
             }
+            File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
             for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
             {
@@ -1072,62 +1072,67 @@ namespace 词器
             }
         }
 
-        private void comboBoxTiaoPinDuanMa_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxTiaoPinCheckDuan()
         {
-            //如果两个combobox都非空就执行检查
-            //  已调频就报错
-            //  如果短码词和长码词相同，或者长码不以短码开头，就报错
-            //  获取长码，如果对应多个长码就弹窗报错
-            //    如果有多选，或引入重码就提示
-            //    没有提示就显示勾勾没问题
-            if (comboBoxTiaoPinDuanMa.Items.Count != 0 && comboBoxTiaoPinChangMa.Items.Count != 0)
+            //已调频就报错
+            //如果短码词和长码词相同，或者长码不以短码开头，就报错
+            //获取长码，如果对应多个长码就弹窗报错
+            //  如果有多选，或没有空的码位就提示
+            //  没有提示就显示勾勾没问题
+            if (!YiYouTiaoMu(textBoxTiaoPinDuanCi.Text, comboBoxTiaoPinDuanMa.Text))
             {
-                comboBoxTiaoPinChangMa.SelectedIndex = 0;//让长码检查器也检查一下
-                if (!YiYouTiaoMu(textBoxTiaoPinDuanCi.Text, comboBoxTiaoPinDuanMa.Text))
+                labelCheckTiaoPinDuan.ForeColor = Color.Red;
+                labelCheckTiaoPinDuan.Text = "×已调频";
+            }
+            else if (textBoxTiaoPinDuanCi.Text == textBoxTiaoPinChangCi.Text || !comboBoxTiaoPinChangMa.Text.StartsWith(comboBoxTiaoPinDuanMa.Text))
+            {
+                labelCheckTiaoPinDuan.ForeColor = Color.Red;
+                labelCheckTiaoPinDuan.Text = "×调不了";
+            }
+            else
+            {
+                List<string> XinMa = new();//调频后的长码全码
+                List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取调频后的长码全码
+                foreach (string quanma in QuanMa)
                 {
-                    labelCheckTiaoPinDuan.ForeColor = Color.Red;
-                    labelCheckTiaoPinDuan.Text = "×已调频";
+                    if (quanma.StartsWith(comboBoxTiaoPinDuanMa.Text))
+                    {
+                        XinMa.Add(quanma);
+                    }
                 }
-                else if (textBoxTiaoPinDuanCi.Text == textBoxTiaoPinChangCi.Text || !comboBoxTiaoPinChangMa.Text.StartsWith(comboBoxTiaoPinDuanMa.Text))
+                if (XinMa.Count > 1)
                 {
-                    labelCheckTiaoPinDuan.ForeColor = Color.Red;
-                    labelCheckTiaoPinDuan.Text = "×调不了";
+                    MessageBox.Show("此短码对应多个长码，无法进行调频。\r\n若到手动调频，请到改码页面操作。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxTiaoPinDuanCi.Text = string.Empty;
                 }
                 else
                 {
-                    List<string> XinMa = new();//调频后的长码
-                    List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取调频后的长码
-                    foreach (string quanma in QuanMa)
+                    labelCheckTiaoPinDuan.ForeColor = Color.Blue;
+                    labelCheckTiaoPinDuan.Text = "!";
+                    if (comboBoxTiaoPinDuanMa.Items.Count > 1)
                     {
-                        if (quanma.StartsWith(comboBoxTiaoPinDuanMa.Text))
-                        {
-                            XinMa.Add(quanma[..comboBoxTiaoPinChangMa.Text.Length]);
-                        }
+                        labelCheckTiaoPinDuan.Text += " 多";
                     }
-                    if (XinMa.Count > 1)
+                    if (YiYouMa(XinMa[0]) && !XinMa[0].StartsWith(comboBoxTiaoPinChangMa.Text))
                     {
-                        MessageBox.Show("此短码对应多个长码，无法进行调频。\r\n若到手动调频，请到改码页面操作。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        textBoxTiaoPinDuanCi.Text = string.Empty;
+                        labelCheckTiaoPinDuan.Text += " 占";
                     }
-                    else
+                    if (labelCheckTiaoPinDuan.Text == "!")
                     {
-                        labelCheckTiaoPinDuan.ForeColor = Color.Blue;
-                        labelCheckTiaoPinDuan.Text = "!";
-                        if (comboBoxTiaoPinDuanMa.Items.Count > 1)
-                        {
-                            labelCheckTiaoPinDuan.Text += " 多";
-                        }
-                        if (YiYouMa(XinMa[0]) && XinMa[0] != comboBoxTiaoPinChangMa.Text)
-                        {
-                            labelCheckTiaoPinDuan.Text += " 占";
-                        }
-                        if (labelCheckTiaoPinDuan.Text == "!")
-                        {
-                            labelCheckTiaoPinDuan.ForeColor = Color.Green;
-                            labelCheckTiaoPinDuan.Text = "√没问题";
-                        }
+                        labelCheckTiaoPinDuan.ForeColor = Color.Green;
+                        labelCheckTiaoPinDuan.Text = "√没问题";
                     }
                 }
+            }
+        }
+
+        private void comboBoxTiaoPinDuanMa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //如果两个combobox都非空就执行检查
+            if (comboBoxTiaoPinDuanMa.Items.Count != 0 && comboBoxTiaoPinChangMa.Items.Count != 0)
+            {
+                comboBoxTiaoPinCheckDuan();
+                comboBoxTiaoPinCheckChang();
             }
         }
 
@@ -1170,36 +1175,41 @@ namespace 词器
             }
         }
 
+        private void comboBoxTiaoPinCheckChang()
+        {
+            //已调频就报错
+            //如果短码词和长码词相同，或者长码不以短码开头，就报错
+            //  如果有多选就提示
+            //  没有提示就显示勾勾没问题
+            if (!YiYouTiaoMu(textBoxTiaoPinChangCi.Text, comboBoxTiaoPinChangMa.Text))
+            {
+                labelCheckTiaoPinChang.ForeColor = Color.Red;
+                labelCheckTiaoPinChang.Text = "×已调频";
+            }
+            else if (textBoxTiaoPinDuanCi.Text == textBoxTiaoPinChangCi.Text || !comboBoxTiaoPinChangMa.Text.StartsWith(comboBoxTiaoPinDuanMa.Text))
+            {
+                labelCheckTiaoPinChang.ForeColor = Color.Red;
+                labelCheckTiaoPinChang.Text = "×调不了";
+            }
+            else if (comboBoxTiaoPinChangMa.Items.Count > 1)
+            {
+                labelCheckTiaoPinChang.ForeColor = Color.Blue;
+                labelCheckTiaoPinChang.Text = "!有多项";
+            }
+            else
+            {
+                labelCheckTiaoPinChang.ForeColor = Color.Green;
+                labelCheckTiaoPinChang.Text = "√没问题";
+            }
+        }
+
         private void comboBoxTiaoPinChangMa_SelectedIndexChanged(object sender, EventArgs e)
         {
             //如果两个combobox都非空就执行检查
-            //  已调频就报错
-            //  如果短码词和长码词相同，或者长码不以短码开头，就报错
-            //  如果有多选就提示
-            //  没有提示就显示勾勾没问题
             if (comboBoxTiaoPinDuanMa.Items.Count != 0 && comboBoxTiaoPinChangMa.Items.Count != 0)
             {
-                comboBoxTiaoPinDuanMa.SelectedIndex = 0;//让短码检查器也检查一下
-                if (!YiYouTiaoMu(textBoxTiaoPinChangCi.Text, comboBoxTiaoPinChangMa.Text))
-                {
-                    labelCheckTiaoPinChang.ForeColor = Color.Red;
-                    labelCheckTiaoPinChang.Text = "×已调频";
-                }
-                else if (textBoxTiaoPinDuanCi.Text == textBoxTiaoPinChangCi.Text || !comboBoxTiaoPinChangMa.Text.StartsWith(comboBoxTiaoPinDuanMa.Text))
-                {
-                    labelCheckTiaoPinChang.ForeColor = Color.Red;
-                    labelCheckTiaoPinChang.Text = "×调不了";
-                }
-                else if (comboBoxTiaoPinChangMa.Items.Count > 1)
-                {
-                    labelCheckTiaoPinChang.ForeColor = Color.Blue;
-                    labelCheckTiaoPinChang.Text = "!有多项";
-                }
-                else
-                {
-                    labelCheckTiaoPinChang.ForeColor = Color.Green;
-                    labelCheckTiaoPinChang.Text = "√没问题";
-                }
+                comboBoxTiaoPinCheckDuan();
+                comboBoxTiaoPinCheckChang();
             }
         }
 
@@ -1214,15 +1224,25 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            File.Delete(CiZuLuJing);
-            string XinMa = string.Empty;//短词调频后的长码
-            List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取调频后的长码
+            string XinMa = string.Empty;//短词调频后的长码全码
+            List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取调频后的长码全码
             foreach (string quanma in QuanMa)
             {
                 if (quanma.StartsWith(comboBoxTiaoPinDuanMa.Text))
                 {
-                    XinMa = quanma[..comboBoxTiaoPinChangMa.Text.Length];
+                    XinMa = quanma;
                     break;
+                }
+            }
+            if (!labelCheckTiaoPinDuan.Text.Contains("占"))
+            {
+                for (int n = 3; n <= 6; n++)//找到最短的空码
+                {
+                    if (!YiYouMa(XinMa[..n]))
+                    {
+                        XinMa = XinMa[..n];
+                        break;
+                    }
                 }
             }
             int count = 0;//用来决定什么时候跳出循环
@@ -1268,6 +1288,7 @@ namespace 词器
                     }
                 }
             }
+            File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
             for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
             {
