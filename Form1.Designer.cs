@@ -408,12 +408,14 @@
             // 
             resources.ApplyResources(textBoxGaiMaMa, "textBoxGaiMaMa");
             textBoxGaiMaMa.Name = "textBoxGaiMaMa";
+            textBoxGaiMaMa.TextChanged += textBoxGaiMaMa_TextChanged;
             // 
             // buttonGaiMa
             // 
             resources.ApplyResources(buttonGaiMa, "buttonGaiMa");
             buttonGaiMa.Name = "buttonGaiMa";
             buttonGaiMa.UseVisualStyleBackColor = true;
+            buttonGaiMa.Click += buttonGaiMa_Click;
             // 
             // labelCheckGaiMa
             // 
@@ -427,6 +429,7 @@
             comboBoxYuanMa.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxYuanMa.FormattingEnabled = true;
             comboBoxYuanMa.Name = "comboBoxYuanMa";
+            comboBoxYuanMa.SelectedIndexChanged += comboBoxYuanMa_SelectedIndexChanged;
             // 
             // labelGaiMaMa
             // 
@@ -443,6 +446,7 @@
             resources.ApplyResources(textBoxGaiMaCi, "textBoxGaiMaCi");
             textBoxGaiMaCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxGaiMaCi.Name = "textBoxGaiMaCi";
+            textBoxGaiMaCi.TextChanged += textBoxGaiMaCi_TextChanged;
             // 
             // labelGaiMaCi
             // 
@@ -513,6 +517,7 @@
             comboBoxTiaoPinDuanMa.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTiaoPinDuanMa.FormattingEnabled = true;
             comboBoxTiaoPinDuanMa.Name = "comboBoxTiaoPinDuanMa";
+            comboBoxTiaoPinDuanMa.SelectedIndexChanged += comboBoxTiaoPinDuanMa_SelectedIndexChanged;
             // 
             // labelTiaoPinDuanMa
             // 
@@ -524,6 +529,7 @@
             resources.ApplyResources(textBoxTiaoPinDuanCi, "textBoxTiaoPinDuanCi");
             textBoxTiaoPinDuanCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTiaoPinDuanCi.Name = "textBoxTiaoPinDuanCi";
+            textBoxTiaoPinDuanCi.TextChanged += textBoxTiaoPinDuanCi_TextChanged;
             // 
             // labelTiaoPinDuanCi
             // 

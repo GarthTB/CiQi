@@ -129,7 +129,7 @@ namespace 词器
 
         private void buttonBeiFen_Click(object sender, EventArgs e)
         {
-            //如果路径不为空就执行备份并更新检查器
+            //如果路径不为空就执行备份并更新检查器，且禁用备份按钮以防止重复备份
             //否则提示选择路径
             if (BeiFenLuJing != null)
             {
@@ -142,6 +142,7 @@ namespace 词器
                 }
                 labelCheckBeiFen.ForeColor = Color.Green;
                 labelCheckBeiFen.Text = "√已备份";
+                buttonBeiFen.Enabled = false;
             }
             else
             {
@@ -579,7 +580,7 @@ namespace 词器
         private void textBoxShanChuCi_TextChanged(object sender, EventArgs e)
         {
             //清空combobox里的码
-            //  如果小于2个字就关掉检查
+            //  如果少于2个字就关掉检查
             //  如果词库无该词就报错
             //    获取词的所有编码，放进combobox
             //    开启检查器，以便combobox执行检查
@@ -697,11 +698,12 @@ namespace 词器
         {
             //如果未选择原词就提醒
             //如果少于2个字就关掉检查
-            //如果非中文就报错
+            //如果输入了非中文就报错
+            //如果编码用字不在DanZi中就报错
+            //如果码不配就报错
             //如果已有词就提示
-            //如果编码用字超出DanZi就提示
-            //否则检查新词是否和新码匹配
-            if (textBoxGaiCiCi.Text != string.Empty && comboBoxYuanCi.Text == string.Empty)
+            //没有提示就显示勾勾没问题
+            if (comboBoxYuanCi.Text == string.Empty)
             {
                 MessageBox.Show("请先选择输入编码并选择原词，再输入要改成的词。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textBoxGaiCiCi.Text = string.Empty;
@@ -718,20 +720,20 @@ namespace 词器
                     labelCheckGaiCi.ForeColor = Color.Red;
                     labelCheckGaiCi.Text = "×无效词";
                 }
-                else if (YiYouCi(textBoxGaiCiCi.Text))
-                {
-                    labelCheckGaiCi.ForeColor = Color.Blue;
-                    labelCheckGaiCi.Text = "!已有词";
-                }
                 else if (!AllInDanZi(textBoxGaiCiCi.Text))
                 {
-                    labelCheckGaiCi.ForeColor = Color.Blue;
-                    labelCheckGaiCi.Text = "!生僻字";
+                    labelCheckGaiCi.ForeColor = Color.Red;
+                    labelCheckGaiCi.Text = "×无效词";
                 }
                 else if (!CiMaMatch(textBoxGaiCiCi.Text, textBoxGaiCiMa.Text))
                 {
                     labelCheckGaiCi.ForeColor = Color.Red;
                     labelCheckGaiCi.Text = "×码不配";
+                }
+                else if (YiYouCi(textBoxGaiCiCi.Text))
+                {
+                    labelCheckGaiCi.ForeColor = Color.Blue;
+                    labelCheckGaiCi.Text = "!已有词";
                 }
                 else
                 {
@@ -743,22 +745,17 @@ namespace 词器
 
         private void textBoxGaiCiMa_TextChanged(object sender, EventArgs e)
         {
-            //清空combobox里的词
+            //清空combobox里的词和textbox里的词
             //  如果码长小于3就关掉检查
-            //  如果输入了非小写英文就报错
             //  如果词库无该码就报错
             //    获取编码的所有词，放进combobox
             //    开启检查器，以便combobox执行检查
             comboBoxYuanCi.Text = string.Empty;
             comboBoxYuanCi.Items.Clear();
+            textBoxGaiCiCi.Text = string.Empty;
             if (textBoxGaiCiMa.Text.Length < 3)
             {
                 labelCheckGaiCi.Visible = false;
-            }
-            else if (Regex.IsMatch(textBoxGaiCiMa.Text, "[^a-z]"))
-            {
-                MessageBox.Show("编码应全为英文小写字母。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxGaiCiMa.Text = string.Empty;
             }
             else if (!YiYouMa(textBoxGaiCiMa.Text))
             {
@@ -812,11 +809,265 @@ namespace 词器
             }
         }
 
+        private void GaiCi()
+        {
+            //将CiZu指定码的指定词换成另一个词并写日志
+            List<string> Ci_Malist = new();//用于分装词库的每一行
+            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词库装进list
+            {
+                Ci_Malist.Add(Ci_Ma);
+            }
+            CiZuStream.Dispose();//载入完成
+            File.Delete(CiZuLuJing);
+            for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
+            {
+                if (Ci_Malist[n] == comboBoxYuanCi.Text + "\t" + textBoxGaiCiMa.Text)
+                {
+                    Ci_Malist[n] = textBoxGaiCiCi.Text + "\t" + textBoxGaiCiMa.Text;
+                    break;
+                }
+            }
+            StreamWriter NewCiZuStream = new(CiZuLuJing);
+            for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
+            {
+                NewCiZuStream.WriteLine(Ci_Malist[n]);
+            }
+            NewCiZuStream.Dispose();//写入完成
+            richTextBoxLog.Text += textBoxGaiCiCi.Text + "\t" + textBoxGaiCiMa.Text + "\t改词\t" + labelCheckGaiCi.Text + "\t原词：\t" + comboBoxYuanCi.Text + "\r\n";
+            labelCheckGaiCi.ForeColor = Color.Red;//防止再次加入同一词
+            labelCheckGaiCi.Text = "×已修改";
+        }
+
         private void buttonGaiCi_Click(object sender, EventArgs e)
         {
-            //检查没问题就添加
+            //检查没问题就修改
             //检查有提示就弹框确认
-            //其他情况就不添加并弹框提示
+            //其他情况就不修改并弹框提示
+            if (textBoxGaiCiCi.Text.Length >= 2 && labelCheckGaiCi.Visible && labelCheckGaiCi.ForeColor == Color.Green)
+            {
+                GaiCi();
+            }
+            else if (textBoxGaiCiCi.Text.Length >= 2 && labelCheckGaiCi.Visible && labelCheckGaiCi.ForeColor == Color.Blue)
+            {
+                if (MessageBox.Show("确定改词吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                {
+                    GaiCi();
+                }
+            }
+            else
+            {
+                MessageBox.Show("未修改。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //改码页的操作
+        private void textBoxGaiMaCi_TextChanged(object sender, EventArgs e)
+        {
+            //清空combobox里的码和textbox里的码
+            //  如果少于2个字就关掉检查
+            //  如果词库无该词就报错
+            //    获取词的所有编码，放进combobox
+            //    开启检查器，以便combobox执行检查
+            comboBoxYuanMa.Text = string.Empty;
+            comboBoxYuanMa.Items.Clear();
+            textBoxGaiMaMa.Text = string.Empty;
+            if (textBoxGaiMaCi.Text.Length < 2)
+            {
+                labelCheckGaiMa.Visible = false;
+            }
+            else if (!YiYouCi(textBoxGaiMaCi.Text))
+            {
+                labelCheckGaiMa.Visible = true;
+                labelCheckGaiMa.ForeColor = Color.Red;
+                labelCheckGaiMa.Text = "×无该词";
+            }
+            else
+            {
+                using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+                for (int n = 0; n < 5; n++)//跳过文件头
+                {
+                    CiZuStream.ReadLine();
+                }
+                string? Ci_Ma = null;//词组流中的每一行
+                while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词的所有编码装进combobox
+                {
+                    if (Ci_Ma.StartsWith(textBoxGaiMaCi.Text + "\t"))
+                    {
+                        comboBoxYuanMa.Items.Add(Ci_Ma.Split("\t")[1]);
+                    }
+                }
+                comboBoxYuanMa.SelectedIndex = 0;
+                labelCheckGaiMa.Visible = true;
+            }
+        }
+
+        private void textBoxGaiMaMa_TextChanged(object sender, EventArgs e)
+        {
+            //如果未选择原码就提醒
+            //如果码长小于3就关掉检查
+            //如果输入了非小写英文就报错
+            //如果码不配就报错
+            //如果已有码就提示
+            //没有提示就显示勾勾没问题
+            if (comboBoxYuanMa.Text == string.Empty)
+            {
+                MessageBox.Show("请先选择输入词组并选择原码，再输入要改成的词。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                textBoxGaiMaMa.Text = string.Empty;
+            }
+            else if (textBoxGaiMaMa.Text.Length < 3)
+            {
+                labelCheckGaiMa.Visible = false;
+            }
+            else
+            {
+                labelCheckGaiMa.Visible = true;
+                if (Regex.IsMatch(textBoxGaiMaMa.Text, "[^a-z]"))
+                {
+                    labelCheckGaiMa.ForeColor = Color.Red;
+                    labelCheckGaiMa.Text = "×无效码";
+                }
+                else if (!CiMaMatch(textBoxGaiMaCi.Text, textBoxGaiMaMa.Text))
+                {
+                    labelCheckGaiMa.ForeColor = Color.Red;
+                    labelCheckGaiMa.Text = "×码不配";
+                }
+                else if (YiYouMa(textBoxGaiMaMa.Text))
+                {
+                    labelCheckGaiMa.ForeColor = Color.Blue;
+                    labelCheckGaiMa.Text = "!已有码";
+                }
+                else
+                {
+                    labelCheckGaiMa.ForeColor = Color.Green;
+                    labelCheckGaiMa.Text = "√没问题";
+                }
+            }
+        }
+
+        private void comboBoxYuanMa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //如果此combobox非空就检查
+            //  已修改该码报错
+            //    多选提示
+            //    没有提示就显示勾勾没问题
+            if (comboBoxYuanMa.Items.Count != 0)
+            {
+                if (!YiYouTiaoMu(textBoxGaiMaCi.Text, comboBoxYuanMa.Text))
+                {
+                    labelCheckGaiMa.ForeColor = Color.Red;
+                    labelCheckGaiMa.Text = "×已修改";
+                }
+                else if (comboBoxYuanMa.Items.Count > 1)
+                {
+                    labelCheckGaiMa.ForeColor = Color.Blue;
+                    labelCheckGaiMa.Text = "!有多项";
+                }
+                else
+                {
+                    labelCheckGaiMa.ForeColor = Color.Green;
+                    labelCheckGaiMa.Text = "√没问题";
+                }
+            }
+        }
+
+        private void GaiMa()
+        {
+            //将CiZu指定词的指定码换成另一个码并写日志
+            List<string> Ci_Malist = new();//用于分装词库的每一行
+            StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+            string? Ci_Ma = null;//词组流中的每一行
+            while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词库装进list
+            {
+                Ci_Malist.Add(Ci_Ma);
+            }
+            CiZuStream.Dispose();//载入完成
+            File.Delete(CiZuLuJing);
+            for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
+            {
+                if (Ci_Malist[n] == textBoxGaiMaCi.Text + "\t" + comboBoxYuanMa.Text)
+                {
+                    Ci_Malist[n] = textBoxGaiMaCi.Text + "\t" + textBoxGaiMaMa.Text;
+                    break;
+                }
+            }
+            StreamWriter NewCiZuStream = new(CiZuLuJing);
+            for (int n = 0; n < Ci_Malist.Count; n++)//将list写入新词库文件
+            {
+                NewCiZuStream.WriteLine(Ci_Malist[n]);
+            }
+            NewCiZuStream.Dispose();//写入完成
+            richTextBoxLog.Text += textBoxGaiMaCi.Text + "\t" + textBoxGaiMaMa.Text + "\t改码\t" + labelCheckGaiMa.Text + "\t原码：\t" + comboBoxYuanMa.Text + "\r\n";
+            labelCheckGaiMa.ForeColor = Color.Red;//防止再次加入同一词
+            labelCheckGaiMa.Text = "×已修改";
+        }
+
+        private void buttonGaiMa_Click(object sender, EventArgs e)
+        {
+            //检查没问题就修改
+            //检查有提示就弹框确认
+            //其他情况就不修改并弹框提示
+            if (textBoxGaiMaMa.Text.Length >= 3 && labelCheckGaiMa.Visible && labelCheckGaiMa.ForeColor == Color.Green)
+            {
+                GaiMa();
+            }
+            else if (textBoxGaiMaMa.Text.Length >= 3 && labelCheckGaiMa.Visible && labelCheckGaiMa.ForeColor == Color.Blue)
+            {
+                if (MessageBox.Show("确定改码吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
+                {
+                    GaiMa();
+                }
+            }
+            else
+            {
+                MessageBox.Show("未修改。请检查输入的词和码。", "误码提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //调频页的操作
+        private void textBoxTiaoPinDuanCi_TextChanged(object sender, EventArgs e)
+        {
+            //清空combobox里的码
+            //  如果少于2个字就关掉检查
+            //  如果词库无该词就报错
+            //    获取词的所有编码，放进combobox
+            //    开启检查器，以便combobox执行检查
+            comboBoxTiaoPinDuanMa.Text = string.Empty;
+            comboBoxTiaoPinDuanMa.Items.Clear();
+            if (textBoxTiaoPinDuanCi.Text.Length < 2)
+            {
+                labelCheckTiaoPinDuan.Visible = false;
+            }
+            else if (!YiYouCi(textBoxTiaoPinDuanCi.Text))
+            {
+                labelCheckTiaoPinDuan.Visible = true;
+                labelCheckTiaoPinDuan.ForeColor = Color.Red;
+                labelCheckTiaoPinDuan.Text = "×无该词";
+            }
+            else
+            {
+                using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
+                for (int n = 0; n < 5; n++)//跳过文件头
+                {
+                    CiZuStream.ReadLine();
+                }
+                string? Ci_Ma = null;//词组流中的每一行
+                while ((Ci_Ma = CiZuStream.ReadLine()) != null)//将词的所有编码装进combobox
+                {
+                    if (Ci_Ma.StartsWith(textBoxTiaoPinDuanCi.Text + "\t"))
+                    {
+                        comboBoxTiaoPinDuanMa.Items.Add(Ci_Ma.Split("\t")[1]);
+                    }
+                }
+                comboBoxTiaoPinDuanMa.SelectedIndex = 0;
+                labelCheckTiaoPinDuan.Visible = true;
+            }
+        }
+
+        private void comboBoxTiaoPinDuanMa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
