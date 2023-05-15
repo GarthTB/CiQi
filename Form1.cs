@@ -78,7 +78,7 @@ namespace 词器
         {
             //选择备份目录
             //  如果选到了就在textbox里显示，并载入绝对路径
-            folderBrowserDialog.Description = "选择备份词库将被放置在的文件夹";
+            folderBrowserDialog.Description = "备份将被放在此文件夹";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 textBoxBeiFenMuLu.Text = folderBrowserDialog.SelectedPath;
