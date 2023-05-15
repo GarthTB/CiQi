@@ -57,7 +57,7 @@ namespace 词器
             //手动选择小狼毫的用户文件夹
             //  如果选对了就在textbox里显示目录，并载入绝对路径
             //  如果选错了就报错
-            folderBrowserDialog.Description = "选择键道6词库所在的文件夹";
+            folderBrowserDialog.Description = "选择词库所在的文件夹";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 string CiKuMuLu = folderBrowserDialog.SelectedPath;
@@ -1368,7 +1368,7 @@ namespace 词器
             }
             else
             {
-                folderBrowserDialog.Description = "选择日志将被放置在的的文件夹";
+                folderBrowserDialog.Description = "日志将被放在此文件夹";
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
                     string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log.yaml";
