@@ -30,7 +30,7 @@ namespace 词器
             {
                 if (MessageBox.Show("未能自动找到词库！\r\n请将此程序的文件夹放在小狼毫的用户文件夹下!\r\n且用户文件夹应包含以下两个文件：\r\nxkjd6.cizu.dict.yaml\r\nxkjd6.danzi.dict.yaml\r\n\r\n点击确定退出程序，点击取消手动选择词库目录。", "错误", MessageBoxButtons.OKCancel, MessageBoxIcon.Error) == DialogResult.OK)
                 {
-                    System.Environment.Exit(0);
+                    Environment.Exit(0);
                 }
             }
         }
@@ -57,6 +57,7 @@ namespace 词器
             //手动选择小狼毫的用户文件夹
             //  如果选对了就在textbox里显示目录，并载入绝对路径
             //  如果选错了就报错
+            folderBrowserDialog.Description = "选择键道6词库所在的文件夹";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 string CiKuMuLu = folderBrowserDialog.SelectedPath;
@@ -77,6 +78,7 @@ namespace 词器
         {
             //选择备份目录
             //  如果选到了就在textbox里显示，并载入绝对路径
+            folderBrowserDialog.Description = "选择备份词库将被放置在的文件夹";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
                 textBoxBeiFenMuLu.Text = folderBrowserDialog.SelectedPath;
@@ -92,10 +94,9 @@ namespace 词器
 
         private void linkLabelAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //自动复制链接
-            //弹出关于
+            //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.1\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.2\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -701,7 +702,7 @@ namespace 词器
             //如果码不配就报错
             //如果已有词就提示
             //没有提示就显示勾勾没问题
-            if (comboBoxYuanCi.Text == string.Empty)
+            if (comboBoxYuanCi.Text == string.Empty && textBoxGaiCiCi.Text != string.Empty)
             {
                 MessageBox.Show("请先选择输入编码并选择原词，再输入要改成的词。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textBoxGaiCiCi.Text = string.Empty;
@@ -910,7 +911,7 @@ namespace 词器
             //如果已有码就提示
             //如果有更短空码就提示
             //没有提示就显示勾勾没问题
-            if (comboBoxYuanMa.Text == string.Empty)
+            if (comboBoxYuanMa.Text == string.Empty && textBoxGaiMaMa.Text != string.Empty)
             {
                 MessageBox.Show("请先选择输入词组并选择原码，再输入要改成的词。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 textBoxGaiMaMa.Text = string.Empty;
@@ -1367,6 +1368,7 @@ namespace 词器
             }
             else
             {
+                folderBrowserDialog.Description = "选择日志将被放置在的的文件夹";
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
                     string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log.yaml";

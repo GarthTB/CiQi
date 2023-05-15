@@ -183,7 +183,6 @@
             // 
             resources.ApplyResources(textBoxBeiFenMuLu, "textBoxBeiFenMuLu");
             textBoxBeiFenMuLu.BackColor = SystemColors.Window;
-            textBoxBeiFenMuLu.BorderStyle = BorderStyle.FixedSingle;
             textBoxBeiFenMuLu.Name = "textBoxBeiFenMuLu";
             textBoxBeiFenMuLu.ReadOnly = true;
             toolTip.SetToolTip(textBoxBeiFenMuLu, resources.GetString("textBoxBeiFenMuLu.ToolTip"));
@@ -206,7 +205,6 @@
             // 
             resources.ApplyResources(textBoxCiKuMuLu, "textBoxCiKuMuLu");
             textBoxCiKuMuLu.BackColor = SystemColors.Window;
-            textBoxCiKuMuLu.BorderStyle = BorderStyle.FixedSingle;
             textBoxCiKuMuLu.Name = "textBoxCiKuMuLu";
             textBoxCiKuMuLu.ReadOnly = true;
             toolTip.SetToolTip(textBoxCiKuMuLu, resources.GetString("textBoxCiKuMuLu.ToolTip"));
@@ -290,7 +288,6 @@
             // textBoxTianJiaCi
             // 
             resources.ApplyResources(textBoxTianJiaCi, "textBoxTianJiaCi");
-            textBoxTianJiaCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTianJiaCi.Name = "textBoxTianJiaCi";
             toolTip.SetToolTip(textBoxTianJiaCi, resources.GetString("textBoxTianJiaCi.ToolTip"));
             textBoxTianJiaCi.TextChanged += textBoxTianJiaCi_TextChanged;
@@ -347,7 +344,6 @@
             // textBoxShanChuCi
             // 
             resources.ApplyResources(textBoxShanChuCi, "textBoxShanChuCi");
-            textBoxShanChuCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxShanChuCi.Name = "textBoxShanChuCi";
             toolTip.SetToolTip(textBoxShanChuCi, resources.GetString("textBoxShanChuCi.ToolTip"));
             textBoxShanChuCi.TextChanged += textBoxShanChuCi_TextChanged;
@@ -419,7 +415,6 @@
             // textBoxGaiCiCi
             // 
             resources.ApplyResources(textBoxGaiCiCi, "textBoxGaiCiCi");
-            textBoxGaiCiCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxGaiCiCi.Name = "textBoxGaiCiCi";
             toolTip.SetToolTip(textBoxGaiCiCi, resources.GetString("textBoxGaiCiCi.ToolTip"));
             textBoxGaiCiCi.TextChanged += textBoxGaiCiCi_TextChanged;
@@ -491,7 +486,6 @@
             // textBoxGaiMaCi
             // 
             resources.ApplyResources(textBoxGaiMaCi, "textBoxGaiMaCi");
-            textBoxGaiMaCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxGaiMaCi.Name = "textBoxGaiMaCi";
             toolTip.SetToolTip(textBoxGaiMaCi, resources.GetString("textBoxGaiMaCi.ToolTip"));
             textBoxGaiMaCi.TextChanged += textBoxGaiMaCi_TextChanged;
@@ -545,7 +539,6 @@
             // textBoxTiaoPinChangCi
             // 
             resources.ApplyResources(textBoxTiaoPinChangCi, "textBoxTiaoPinChangCi");
-            textBoxTiaoPinChangCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTiaoPinChangCi.Name = "textBoxTiaoPinChangCi";
             toolTip.SetToolTip(textBoxTiaoPinChangCi, resources.GetString("textBoxTiaoPinChangCi.ToolTip"));
             textBoxTiaoPinChangCi.TextChanged += textBoxTiaoPinChangCi_TextChanged;
@@ -589,7 +582,6 @@
             // textBoxTiaoPinDuanCi
             // 
             resources.ApplyResources(textBoxTiaoPinDuanCi, "textBoxTiaoPinDuanCi");
-            textBoxTiaoPinDuanCi.BorderStyle = BorderStyle.FixedSingle;
             textBoxTiaoPinDuanCi.Name = "textBoxTiaoPinDuanCi";
             toolTip.SetToolTip(textBoxTiaoPinDuanCi, resources.GetString("textBoxTiaoPinDuanCi.ToolTip"));
             textBoxTiaoPinDuanCi.TextChanged += textBoxTiaoPinDuanCi_TextChanged;
@@ -630,7 +622,6 @@
             // 
             resources.ApplyResources(richTextBoxLog, "richTextBoxLog");
             richTextBoxLog.BackColor = SystemColors.Window;
-            richTextBoxLog.BorderStyle = BorderStyle.FixedSingle;
             richTextBoxLog.Name = "richTextBoxLog";
             richTextBoxLog.ReadOnly = true;
             toolTip.SetToolTip(richTextBoxLog, resources.GetString("richTextBoxLog.ToolTip"));
