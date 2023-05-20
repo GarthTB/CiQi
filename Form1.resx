@@ -57,2122 +57,2092 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;labelTiaoPinDuanCheck.Name" xml:space="preserve">
-    <value>labelTiaoPinDuanCheck</value>
-  </data>
-  <data name="textBoxCiKuMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonXiuGai.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="comboBoxYuanMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 201</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMaChang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelGaiMaMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="textBoxGaiCiMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonExportLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelYuan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeiFenMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPagePrepare.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="textBoxBeiFenMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="radioButtonXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="checkBoxBuYaoBeiFen.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="labelGaiMaCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
-    <value>openFileDialog</value>
-  </data>
-  <data name="&gt;&gt;tabPageHome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="linkLabelAbout.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBoxYuanCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 201</value>
-  </data>
-  <data name="buttonGengXin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 216</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelHelp.Name" xml:space="preserve">
-    <value>linkLabelHelp</value>
-  </data>
-  <data name="&gt;&gt;labelGaiMaMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="tabPageGaiCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageTianJia.Name" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;textBoxCiKuMuLu.Name" xml:space="preserve">
-    <value>textBoxCiKuMuLu</value>
-  </data>
-  <data name="&gt;&gt;labelYuanCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelTiaoPinChangCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageHome.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tabPagePrepare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabPageTianJia.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiCi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageHome.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 213</value>
-  </data>
-  <data name="&gt;&gt;textBoxShanChuCi.Name" xml:space="preserve">
-    <value>textBoxShanChuCi</value>
-  </data>
-  <data name="&gt;&gt;labelCheckShanChu.Parent" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="&gt;&gt;tabPageTiaoPin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonXiuGai.Name" xml:space="preserve">
-    <value>buttonXiuGai</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTianJia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 26</value>
-  </data>
-  <data name="comboBoxTiaoPinChangMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 251</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanCi.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelGaiMaMa.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;labelCheckShanChu.Name" xml:space="preserve">
-    <value>labelCheckShanChu</value>
-  </data>
-  <data name="labelGaiCiCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelCheckGaiCi.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxCiKuMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBoxBuYaoBeiFen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 216</value>
-  </data>
-  <data name="&gt;&gt;tabPageTianJia.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxXiuGaiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPagePrepare.Name" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;textBoxXiuGaiCi.Name" xml:space="preserve">
-    <value>textBoxXiuGaiCi</value>
-  </data>
-  <data name="labelYuanCi.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
-    <value>checkBox3</value>
-  </data>
-  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;tabPageWanCheng.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="labelCheckShanChu.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="labelTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="labelTiaoPinDuanCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;textBoxTianJiaCi.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;tabPagePrepare.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxShanChuCi.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiCi.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuMa.Name" xml:space="preserve">
-    <value>labelShanChuMa</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangMa.Name" xml:space="preserve">
-    <value>labelTiaoPinChangMa</value>
-  </data>
-  <data name="buttonTianJia.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="comboBoxTiaoPinChangMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelTianJiaMaChang.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPageRiZhi.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCheck.Name" xml:space="preserve">
-    <value>labelXiuGaiCheck</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFenMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelCheckTiaoPinDuan.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCi.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBoxYuanMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabControlmain.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinChangCi.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiCi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinChangCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTianJia.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangMa.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="labelCheckTiaoPinDuan.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageGaiMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelBeiFenMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;buttonCiKuMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="labelGaiCiMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxGaiCiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="buttonShanChu.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;labelCheckBeiFen.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiCi.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiMa.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiMa.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="labelYuanCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonXiuGai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 216</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaCi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxLog.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiMa.Name" xml:space="preserve">
-    <value>buttonGaiMa</value>
-  </data>
-  <data name="labelTiaoPinChangMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 249</value>
-  </data>
-  <data name="textBoxTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaCi.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBoxShanChuCi.Parent" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCheck.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="comboBoxYuanCi.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="tabPageGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMa.Name" xml:space="preserve">
-    <value>labelTianJiaMa</value>
-  </data>
-  <data name="labelCheckGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialogBeiFen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelCheckXiuGai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 216</value>
-  </data>
-  <data name="tabPageGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelShanChuCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelGaiMaMa.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelTianJiaCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Formmain</value>
-  </data>
-  <data name="buttonImportLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 251</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonGengXin.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="labelTianJiaMaChang.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageShanChu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 166</value>
-  </data>
-  <data name="&gt;&gt;labelCiKuMuLu.Name" xml:space="preserve">
-    <value>labelCiKuMuLu</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownTianJiaMaChang.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonShanChu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBoxBeiFenMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;labelGaiMaMa.Name" xml:space="preserve">
-    <value>labelGaiMaMa</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiMa.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMa.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="tabPageWanCheng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="labelTiaoPinDuanCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 113</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
-  </data>
-  <data name="textBoxTiaoPinChangCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 150</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiMa.Name" xml:space="preserve">
-    <value>labelGaiCiMa</value>
-  </data>
-  <data name="labelGaiMaCi.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="labelXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="buttonBeiFen.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;checkBoxAlwaysOnTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCheckXiuGai.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiCi.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelCheckGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 166</value>
-  </data>
-  <data name="&gt;&gt;labelYuanMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="buttonGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="comboBoxTianJiaMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelShanChuCi.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="buttonTiaoPin.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDownTianJiaMaChang.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxCiKuMuLu.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiCi.Name" xml:space="preserve">
-    <value>textBoxGaiCiCi</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiCi.Name" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="&gt;&gt;tabPageXiuGai.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Name" xml:space="preserve">
-    <value>numericUpDownTianJiaMaChang</value>
-  </data>
-  <data name="buttonExportLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 251</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="numericUpDownTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tabPageHome.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCheck.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tabPageRiZhi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageRiZhi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="labelCheckGaiCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonTiaoPin.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="labelCheckTiaoPinChang.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageGaiMa.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabPageXiuGai.Name" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTianJiaMa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPageRiZhi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelTianJiaMa.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFenMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;buttonImportLog.Parent" xml:space="preserve">
-    <value>tabPageRiZhi</value>
-  </data>
-  <data name="&gt;&gt;buttonExportLog.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMa.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buttonExportLog.Name" xml:space="preserve">
-    <value>buttonExportLog</value>
-  </data>
-  <data name="labelCiKuMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;comboBoxTianJiaMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuan.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinDuan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="linkLabelAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 252</value>
-  </data>
-  <data name="labelYuan.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCi.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="textBoxGaiMaCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageXiuGai.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageTiaoPin.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="labelGaiMaMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;checkBoxAlwaysOnTop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="labelCheckGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;textBoxXiuGaiMa.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiCi.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;buttonCiKuMuLu.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxLog.Name" xml:space="preserve">
-    <value>richTextBoxLog</value>
-  </data>
-  <data name="&gt;&gt;labelCheckShanChu.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkBoxAlwaysOnTop.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFen.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelTiaoPinChangMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;comboBoxShanChuMa.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelCheckXiuGai.Name" xml:space="preserve">
-    <value>labelCheckXiuGai</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanCi.Name" xml:space="preserve">
-    <value>comboBoxYuanCi</value>
-  </data>
-  <data name="buttonBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 154</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
-  </data>
-  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="richTextBoxLog.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="comboBoxTiaoPinDuanMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 113</value>
-  </data>
-  <data name="&gt;&gt;labelBeiFenMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelCheckBeiFen.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinDuanCi.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 244</value>
-  </data>
-  <data name="buttonExportLog.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;textBoxTianJiaCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;linkLabelHelp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinChang.Name" xml:space="preserve">
-    <value>labelCheckTiaoPinChang</value>
-  </data>
-  <data name="buttonCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;buttonGengXin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelYuanCi.Name" xml:space="preserve">
-    <value>labelYuanCi</value>
-  </data>
-  <data name="radioButtonXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiMa.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buttonGengXin.Name" xml:space="preserve">
-    <value>buttonGengXin</value>
-  </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 189</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFen.Name" xml:space="preserve">
-    <value>buttonBeiFen</value>
-  </data>
-  <data name="buttonGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
   </data>
   <data name="labelYuan.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 249</value>
   </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 222</value>
-  </data>
-  <data name="comboBoxYuanMa.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiMa.Name" xml:space="preserve">
-    <value>textBoxGaiCiMa</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="labelGaiCiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 166</value>
-  </data>
-  <data name="labelXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="labelTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="textBoxGaiCiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 129</value>
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiMa.Type" xml:space="preserve">
+  <data name="&gt;&gt;radioButtonXiuGaiCi.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelTianJiaCi.Name" xml:space="preserve">
-    <value>labelTianJiaCi</value>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="&gt;&gt;labelCheckXiuGai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPageWanCheng.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonTianJia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="tabPage6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabPageRiZhi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 244</value>
   </data>
   <data name="&gt;&gt;folderBrowserDialog.Name" xml:space="preserve">
     <value>folderBrowserDialog</value>
   </data>
-  <data name="&gt;&gt;labelGaiMaCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="labelShanChuMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 213</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFen.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanMa.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanMa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelYuanMa.Name" xml:space="preserve">
-    <value>labelYuanMa</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelCheckXiuGai.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;buttonShanChu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelTiaoPinDuanMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageXiuGai.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;linkLabelAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaMa.Name" xml:space="preserve">
-    <value>textBoxGaiMaMa</value>
-  </data>
-  <data name="labelXiuGaiCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="labelCheckBeiFen.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabControlmain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxGaiMaCi.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;buttonTianJia.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCi.Name" xml:space="preserve">
-    <value>labelTiaoPinDuanCi</value>
-  </data>
-  <data name="labelXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="labelCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCi.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanCi.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="buttonBeiFenMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="checkBoxAlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 166</value>
-  </data>
-  <data name="&gt;&gt;checkBoxChaoJiZiCi.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="labelCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;tabPageTianJia.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="textBoxTiaoPinDuanCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="textBoxShanChuCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="richTextBoxLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;linkLabelHelp.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="labelTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 204</value>
-  </data>
-  <data name="labelGaiCiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 163</value>
-  </data>
-  <data name="&gt;&gt;labelCheckBeiFen.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;labelBeiFenMuLu.Name" xml:space="preserve">
-    <value>labelBeiFenMuLu</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiCi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiMa.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBoxTianJiaMa.Items" xml:space="preserve">
-    <value>mmmmmm</value>
-  </data>
-  <data name="&gt;&gt;buttonTiaoPin.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelCiKuMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeiFenMuLu.Name" xml:space="preserve">
-    <value>textBoxBeiFenMuLu</value>
-  </data>
-  <data name="&gt;&gt;comboBoxShanChuMa.Parent" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="&gt;&gt;textBoxShanChuCi.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;buttonTianJia.Name" xml:space="preserve">
-    <value>buttonTianJia</value>
-  </data>
-  <data name="labelYuanMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCheck.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiCi.Name" xml:space="preserve">
-    <value>labelCheckGaiCi</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCheck.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinChang.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiCi.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelCheckGaiMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonTianJia.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelCheckBeiFen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPagePrepare.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiMa.Name" xml:space="preserve">
-    <value>labelXiuGaiMa</value>
-  </data>
-  <data name="tabPageHome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="labelYuanMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 198</value>
-  </data>
-  <data name="textBoxGaiMaMa.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="textBoxXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;tabPageHome.Name" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 216</value>
-  </data>
-  <data name="labelTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxCiKuMuLu.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaMa.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTianJiaMa.Name" xml:space="preserve">
-    <value>comboBoxTianJiaMa</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Name" xml:space="preserve">
-    <value>textBoxTiaoPinDuanCi</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonTianJia.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="buttonGengXin.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="labelCheckXiuGai.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="textBoxBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 114</value>
-  </data>
-  <data name="textBoxTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuMa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonCiKuMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTianJia.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="labelCheckTianJia.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonImportLog.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="labelCheckTiaoPinChang.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="labelTiaoPinDuanCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Name" xml:space="preserve">
-    <value>comboBoxTiaoPinChangMa</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 89</value>
-  </data>
-  <data name="&gt;&gt;buttonShanChu.Name" xml:space="preserve">
-    <value>buttonShanChu</value>
-  </data>
-  <data name="comboBoxShanChuMa.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="buttonTianJia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 202</value>
+  <data name="buttonTiaoPin.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="buttonBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="&gt;&gt;radioButtonXiuGaiCi.Name" xml:space="preserve">
-    <value>radioButtonXiuGaiCi</value>
-  </data>
-  <data name="labelTianJiaCi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageWanCheng.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
-  </data>
-  <data name="labelShanChuCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="richTextBoxLog.ToolTip" xml:space="preserve">
+  <data name="comboBoxShanChuMa.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;labelTianJiaCi.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="labelGaiCiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelGaiCiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;textBoxTianJiaCi.Name" xml:space="preserve">
-    <value>textBoxTianJiaCi</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangMa.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPagePrepare.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiMa.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;checkBoxAlwaysOnTop.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuan.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCheck.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabPageRiZhi.Name" xml:space="preserve">
-    <value>tabPageRiZhi</value>
-  </data>
-  <data name="&gt;&gt;textBoxTianJiaCi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinChangCi.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinChangCi.Name" xml:space="preserve">
-    <value>textBoxTiaoPinChangCi</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 200</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeiFenMuLu.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialogCiKu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelBeiFenMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBoxTianJiaMa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 25</value>
-  </data>
-  <data name="labelCheckShanChu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 216</value>
-  </data>
-  <data name="&gt;&gt;labelGaiMaCi.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="&gt;&gt;buttonImportLog.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelYuanMa.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiMa.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="labelCheckBeiFen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 378</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBoxTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Name" xml:space="preserve">
-    <value>comboBoxTiaoPinDuanMa</value>
-  </data>
-  <data name="tabPageTianJia.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelShanChuMa.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonXiuGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonTiaoPin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 251</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCheck.Name" xml:space="preserve">
-    <value>labelTiaoPinChangCheck</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTianJia.Name" xml:space="preserve">
-    <value>labelCheckTianJia</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelCheckShanChu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageTiaoPin.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCi.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiMa.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPageTianJia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCi.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelYuan.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;labelYuanCi.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPageXiuGai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;tabPageShanChu.Name" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="labelCheckTiaoPinDuan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 113</value>
-  </data>
-  <data name="textBoxTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 12</value>
-  </data>
-  <data name="textBoxBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;checkBoxChaoJiZiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonTiaoPin.Name" xml:space="preserve">
-    <value>buttonTiaoPin</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="comboBoxShanChuMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 216</value>
-  </data>
-  <data name="&gt;&gt;comboBoxShanChuMa.Name" xml:space="preserve">
-    <value>comboBoxShanChuMa</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonTiaoPin.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;tabPageWanCheng.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageTiaoPin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="&gt;&gt;tabPageShanChu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="checkBoxChaoJiZiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 252</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelCheckTianJia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 216</value>
-  </data>
-  <data name="comboBoxYuanCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelShanChuCi.Parent" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTianJiaMa.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;tabPageRiZhi.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;buttonShanChu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinDuan.Name" xml:space="preserve">
-    <value>labelCheckTiaoPinDuan</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;buttonCiKuMuLu.Name" xml:space="preserve">
-    <value>buttonCiKuMuLu</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinChang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonExportLog.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="labelShanChuMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanMa.Name" xml:space="preserve">
-    <value>labelTiaoPinDuanMa</value>
-  </data>
-  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinChangCheck.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabPageShanChu.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiMa.Name" xml:space="preserve">
+  <data name="&gt;&gt;labelCheckGaiMa.Parent" xml:space="preserve">
     <value>tabPageGaiMa</value>
   </data>
   <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
     <value>tabPagePrepare</value>
   </data>
-  <data name="&gt;&gt;folderBrowserDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;textBoxShanChuCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonImportLog.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBoxShanChuMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPageTianJia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageXiuGai.Parent" xml:space="preserve">
     <value>tabControlmain</value>
   </data>
-  <data name="&gt;&gt;labelYuanMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="textBoxBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 114</value>
   </data>
-  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabPageGaiCi.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
   </data>
-  <data name="&gt;&gt;comboBoxYuan.Name" xml:space="preserve">
-    <value>comboBoxYuan</value>
-  </data>
-  <data name="textBoxGaiMaMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonExportLog.Parent" xml:space="preserve">
-    <value>tabPageRiZhi</value>
-  </data>
-  <data name="&gt;&gt;buttonBeiFenMuLu.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;linkLabelHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxXiuGaiMa.Name" xml:space="preserve">
-    <value>textBoxXiuGaiMa</value>
-  </data>
-  <data name="buttonGaiMa.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonCiKuMuLu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;labelCiKuMuLu.Name" xml:space="preserve">
+    <value>labelCiKuMuLu</value>
   </data>
   <data name="tabPageShanChu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;labelBeiFenMuLu.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabControlmain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Name" xml:space="preserve">
+    <value>textBoxTiaoPinDuanCi</value>
   </data>
-  <data name="&gt;&gt;labelTiaoPinDuanMa.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="comboBoxYuan.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
   </data>
-  <data name="buttonShanChu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 216</value>
+  <data name="&gt;&gt;tabPageXiuGai.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;checkBoxChaoJiZiCi.Name" xml:space="preserve">
-    <value>checkBoxChaoJiZiCi</value>
+  <data name="textBoxTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 12</value>
   </data>
-  <data name="textBoxCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="&gt;&gt;labelCheckShanChu.Parent" xml:space="preserve">
+    <value>tabPageShanChu</value>
   </data>
-  <data name="labelTiaoPinDuanMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 110</value>
+  <data name="&gt;&gt;labelXiuGaiCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBoxShanChuMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelTiaoPinChangCi.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;labelGaiMaCi.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;openFileDialog.Name" xml:space="preserve">
+    <value>openFileDialog</value>
   </data>
-  <data name="&gt;&gt;textBoxGaiMaMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
+  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 216</value>
+  </data>
+  <data name="labelCheckGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="labelBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 114</value>
+  </data>
+  <data name="tabPage6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="labelGaiCiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="labelCheckGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiMa.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinDuan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonShanChu.Parent" xml:space="preserve">
+    <value>tabPageShanChu</value>
+  </data>
+  <data name="tabPageHome.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonTiaoPin.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelTiaoPinChangCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 150</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="&gt;&gt;buttonTiaoPin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiCi.Name" xml:space="preserve">
+    <value>textBoxXiuGaiCi</value>
+  </data>
+  <data name="&gt;&gt;tabPageXiuGai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageShanChu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiCi.Name" xml:space="preserve">
+    <value>labelGaiCiCi</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAlwaysOnTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelXiuGaiCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCheck.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="buttonExportLog.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonBeiFen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 216</value>
+  </data>
+  <data name="buttonImportLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 251</value>
+  </data>
+  <data name="&gt;&gt;buttonShanChu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;textBoxXiuGaiCi.Parent" xml:space="preserve">
     <value>tabPageXiuGai</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;labelShanChuMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxChaoJiZiCi.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
+  <data name="&gt;&gt;labelTiaoPinChangCheck.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
   </data>
-  <data name="labelShanChuCi.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="labelCiKuMuLu.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;textBoxXiuGaiMa.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
+  <data name="&gt;&gt;textBoxTiaoPinChangCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelCheckXiuGai.Type" xml:space="preserve">
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCi.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPage5.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="linkLabelHelp.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tabPageShanChu.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
   </data>
-  <data name="buttonXiuGai.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="textBoxShanChuCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxGaiMaCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="labelTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 246</value>
-  </data>
-  <data name="buttonBeiFen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 216</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="radioButtonXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 172</value>
-  </data>
-  <data name="tabPageTiaoPin.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="labelTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxGaiCiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 166</value>
-  </data>
-  <data name="&gt;&gt;buttonTianJia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuMa.Parent" xml:space="preserve">
-    <value>tabPageShanChu</value>
-  </data>
-  <data name="tabPageXiuGai.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="tabPageRiZhi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="labelGaiMaMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 163</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiMa.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxShanChuCi.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBoxGaiCiCi.ToolTip" xml:space="preserve">
-    <value />
+  <data name="richTextBoxLog.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
+  <data name="&gt;&gt;labelBeiFenMuLu.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;tabPageTiaoPin.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="labelCheckTiaoPinChang.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="tabPageShanChu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 12</value>
   </data>
-  <data name="buttonBeiFen.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiMa.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="richTextBoxLog.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonXiuGai.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="linkLabelHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 216</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBoxYuan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 251</value>
-  </data>
-  <data name="labelTiaoPinChangCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 251</value>
-  </data>
-  <data name="&gt;&gt;tabPageGaiMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="tabControlmain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textBoxTiaoPinDuanCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonXiuGai.Parent" xml:space="preserve">
-    <value>tabPageXiuGai</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaCi.Name" xml:space="preserve">
-    <value>textBoxGaiMaCi</value>
-  </data>
-  <data name="&gt;&gt;labelTianJiaMaChang.Parent" xml:space="preserve">
-    <value>tabPageTianJia</value>
-  </data>
-  <data name="&gt;&gt;buttonImportLog.Name" xml:space="preserve">
-    <value>buttonImportLog</value>
-  </data>
-  <data name="&gt;&gt;linkLabelAbout.Parent" xml:space="preserve">
-    <value>tabPageHome</value>
-  </data>
-  <data name="&gt;&gt;labelShanChuCi.Name" xml:space="preserve">
-    <value>labelShanChuCi</value>
-  </data>
-  <data name="tabPageWanCheng.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelCiKuMuLu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiCiMa.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiCi.Name" xml:space="preserve">
-    <value>labelGaiCiCi</value>
-  </data>
-  <data name="&gt;&gt;textBoxXiuGaiCi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 9</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxTiaoPinChangCi.Name" xml:space="preserve">
+    <value>textBoxTiaoPinChangCi</value>
   </data>
-  <data name="&gt;&gt;linkLabelAbout.Name" xml:space="preserve">
-    <value>linkLabelAbout</value>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;labelCheckBeiFen.Name" xml:space="preserve">
-    <value>labelCheckBeiFen</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanMa.Name" xml:space="preserve">
-    <value>comboBoxYuanMa</value>
-  </data>
-  <data name="&gt;&gt;tabPageHome.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;tabPageWanCheng.Name" xml:space="preserve">
-    <value>tabPageWanCheng</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="textBoxXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="labelCheckShanChu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBoxCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="&gt;&gt;checkBoxAlwaysOnTop.Name" xml:space="preserve">
-    <value>checkBoxAlwaysOnTop</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="buttonGaiCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 255</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxLog.Parent" xml:space="preserve">
-    <value>tabPageRiZhi</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinDuan.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControlmain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageTiaoPin.Name" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialogBeiFen.Name" xml:space="preserve">
-    <value>folderBrowserDialogBeiFen</value>
-  </data>
-  <data name="textBoxTiaoPinChangCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonBeiFenMuLu.Name" xml:space="preserve">
-    <value>buttonBeiFenMuLu</value>
-  </data>
-  <data name="&gt;&gt;buttonGaiMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="labelXiuGaiCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 216</value>
-  </data>
-  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;buttonGengXin.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;textBoxGaiMaCi.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageXiuGai.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 26</value>
   </data>
-  <data name="&gt;&gt;labelTiaoPinChangCi.Name" xml:space="preserve">
-    <value>labelTiaoPinChangCi</value>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radioButtonXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 172</value>
   </data>
-  <data name="labelCheckTianJia.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;labelXiuGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabPagePrepare.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;textBoxXiuGaiCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxYuanCi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxGaiMaMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 166</value>
-  </data>
-  <data name="buttonCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
-  </data>
-  <data name="labelTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;labelYuan.Name" xml:space="preserve">
-    <value>labelYuan</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinChang.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelXiuGaiCi.Name" xml:space="preserve">
-    <value>labelXiuGaiCi</value>
-  </data>
-  <data name="labelYuanCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 198</value>
+  <data name="buttonImportLog.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="linkLabelHelp.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="tabPageGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
+  <data name="linkLabelAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 252</value>
   </data>
-  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;buttonXiuGai.Name" xml:space="preserve">
+    <value>buttonXiuGai</value>
   </data>
-  <data name="&gt;&gt;labelCiKuMuLu.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiMa.Parent" xml:space="preserve">
-    <value>tabPageGaiMa</value>
-  </data>
-  <data name="comboBoxTianJiaMa.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tabPageShanChu.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDownTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 251</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Name" xml:space="preserve">
-    <value>checkBoxBuYaoBeiFen</value>
-  </data>
-  <data name="&gt;&gt;tabControlmain.Name" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelTiaoPinDuanCi.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;labelGaiCiCi.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="textBoxTianJiaCi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>tabPagePrepare</value>
   </data>
-  <data name="comboBoxTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="linkLabelAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
   </data>
-  <data name="textBoxGaiCiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 12</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTiaoPinChangMa.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBuYaoBeiFen.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelCheckTiaoPinChang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 251</value>
-  </data>
-  <data name="&gt;&gt;labelCheckGaiCi.Parent" xml:space="preserve">
-    <value>tabPageGaiCi</value>
-  </data>
-  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageTiaoPin.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 26</value>
   </data>
-  <data name="radioButtonXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
+  <data name="checkBoxChaoJiZiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 252</value>
   </data>
-  <data name="&gt;&gt;labelYuanMa.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="buttonShanChu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBoxTianJiaMa.Items" xml:space="preserve">
+    <value>mmmmmm</value>
+  </data>
+  <data name="buttonTianJia.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;comboBoxShanChuMa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;linkLabelAbout.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;tabControlmain.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="buttonBeiFenMuLu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinDuan.Name" xml:space="preserve">
+    <value>labelCheckTiaoPinDuan</value>
+  </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonGaiCi.Name" xml:space="preserve">
-    <value>buttonGaiCi</value>
+  <data name="&gt;&gt;buttonExportLog.Parent" xml:space="preserve">
+    <value>tabPageRiZhi</value>
   </data>
-  <data name="&gt;&gt;buttonTiaoPin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="labelGaiMaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 163</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiMa.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
   </data>
   <data name="&gt;&gt;labelYuanCi.Parent" xml:space="preserve">
     <value>tabPageGaiCi</value>
   </data>
+  <data name="&gt;&gt;tabControlmain.Name" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanMa.Name" xml:space="preserve">
+    <value>labelTiaoPinDuanMa</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHelp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuCi.Name" xml:space="preserve">
+    <value>labelShanChuCi</value>
+  </data>
+  <data name="linkLabelHelp.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelShanChuMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 213</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiMa.Name" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="&gt;&gt;tabPageTianJia.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="tabPagePrepare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonShanChu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxShanChuCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonTianJia.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 251</value>
+  </data>
+  <data name="labelTiaoPinChangMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCheckBeiFen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelCiKuMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;labelYuan.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="checkBoxBuYaoBeiFen.ToolTip" xml:space="preserve">
+  <data name="textBoxGaiCiCi.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelYuanMa.Name" xml:space="preserve">
+    <value>labelYuanMa</value>
+  </data>
+  <data name="radioButtonXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="tabControlmain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonTiaoPin.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanMa.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;buttonImportLog.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="textBoxGaiMaMa.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;checkBoxChaoJiZiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGaiCiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 163</value>
+  </data>
+  <data name="&gt;&gt;tabPageTiaoPin.Name" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;tabPageWanCheng.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTianJiaMa.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="tabPageShanChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="textBoxXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinDuan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 114</value>
+  <data name="comboBoxYuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tabPagePrepare</value>
+  <data name="&gt;&gt;labelTianJiaMaChang.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;labelTianJiaMaChang.Name" xml:space="preserve">
-    <value>labelTianJiaMaChang</value>
-  </data>
-  <data name="labelTiaoPinDuanCi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;tabPageGaiCi.Parent" xml:space="preserve">
-    <value>tabControlmain</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;linkLabelAbout.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="labelTianJiaMa.ToolTip" xml:space="preserve">
+  <data name="&gt;&gt;tabPageShanChu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiMa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaCi.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinChang.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="buttonImportLog.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="&gt;&gt;buttonCiKuMuLu.Name" xml:space="preserve">
+    <value>buttonCiKuMuLu</value>
+  </data>
+  <data name="comboBoxTianJiaMa.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelShanChuCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonExportLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCheckTiaoPinDuan.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabPageHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTianJiaMa.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuCi.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 150</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Formmain</value>
+  </data>
+  <data name="&gt;&gt;comboBoxShanChuMa.Name" xml:space="preserve">
+    <value>comboBoxShanChuMa</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiMa.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFen.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTianJiaCi.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;labelGaiMaCi.Name" xml:space="preserve">
     <value>labelGaiMaCi</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelCheckBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;radioButtonXiuGaiMa.Name" xml:space="preserve">
-    <value>radioButtonXiuGaiMa</value>
+  <data name="labelYuanMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 198</value>
   </data>
-  <data name="labelTiaoPinChangCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="&gt;&gt;comboBoxYuan.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
   </data>
-  <data name="&gt;&gt;buttonImportLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxXiuGaiCi.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+  <data name="&gt;&gt;labelTianJiaMa.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
   </data>
-  <data name="textBoxXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 216</value>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
   </data>
-  <data name="labelCheckGaiCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 166</value>
+  <data name="&gt;&gt;buttonXiuGai.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>11, 24</value>
-  </data>
-  <data name="&gt;&gt;labelCheckTiaoPinDuan.Parent" xml:space="preserve">
-    <value>tabPageTiaoPin</value>
-  </data>
-  <data name="textBoxTianJiaCi.ToolTip" xml:space="preserve">
+  <data name="tabPageTiaoPin.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="labelTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 12</value>
+  <data name="labelTiaoPinDuanMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 110</value>
   </data>
-  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
-    <value>tabPage6</value>
+  <data name="&gt;&gt;labelTiaoPinDuanCheck.Name" xml:space="preserve">
+    <value>labelTiaoPinDuanCheck</value>
   </data>
-  <data name="comboBoxTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 208</value>
+  <data name="&gt;&gt;buttonGaiMa.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;tabPage6.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;tabPage5.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="comboBoxTiaoPinDuanMa.ToolTip" xml:space="preserve">
+  <data name="&gt;&gt;tabPageHome.Name" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="labelCheckXiuGai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 216</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="labelBeiFenMuLu.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 216</value>
+  <data name="&gt;&gt;buttonBeiFenMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;folderBrowserDialogCiKu.Name" xml:space="preserve">
-    <value>folderBrowserDialogCiKu</value>
+  <data name="checkBoxAlwaysOnTop.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tabPageTianJia.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;labelCheckGaiMa.Name" xml:space="preserve">
     <value>labelCheckGaiMa</value>
   </data>
+  <data name="&gt;&gt;linkLabelAbout.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="textBoxGaiCiMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 246</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaCi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabPageRiZhi.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelBeiFenMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPagePrepare.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCheck.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;buttonTiaoPin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHelp.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="labelGaiCiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="richTextBoxLog.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckGaiCi.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanMa.Name" xml:space="preserve">
+    <value>comboBoxYuanMa</value>
+  </data>
+  <data name="buttonShanChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 216</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxLog.Parent" xml:space="preserve">
+    <value>tabPageRiZhi</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFenMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTianJiaMa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanMa.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="&gt;&gt;buttonXiuGai.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="buttonTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 202</value>
+  </data>
+  <data name="tabPageXiuGai.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonGengXin.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuan.Name" xml:space="preserve">
+    <value>comboBoxYuan</value>
+  </data>
+  <data name="comboBoxYuan.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCi.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="labelTianJiaMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiMa.Name" xml:space="preserve">
+    <value>textBoxXiuGaiMa</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;labelYuanCi.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelTiaoPinDuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="labelTiaoPinChangMa.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;labelCheckBeiFen.Name" xml:space="preserve">
+    <value>labelCheckBeiFen</value>
+  </data>
+  <data name="buttonTiaoPin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 251</value>
+  </data>
+  <data name="labelTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiMa.Name" xml:space="preserve">
+    <value>radioButtonXiuGaiMa</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxLog.Name" xml:space="preserve">
+    <value>richTextBoxLog</value>
+  </data>
+  <data name="textBoxCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="labelTiaoPinChangCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 251</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinDuan.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="textBoxShanChuCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBoxLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;tabPageRiZhi.Name" xml:space="preserve">
+    <value>tabPageRiZhi</value>
+  </data>
+  <data name="tabPageGaiCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonBeiFen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiMa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinChang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxShanChuCi.Name" xml:space="preserve">
+    <value>textBoxShanChuCi</value>
+  </data>
+  <data name="&gt;&gt;labelCheckShanChu.Name" xml:space="preserve">
+    <value>labelCheckShanChu</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 255</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTianJiaMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGaiMaMa.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanCi.Name" xml:space="preserve">
+    <value>comboBoxYuanCi</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonXiuGai.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 216</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAlwaysOnTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckXiuGai.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPageTianJia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiMa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 129</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Name" xml:space="preserve">
+    <value>numericUpDownTianJiaMaChang</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabPage5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialogCiKu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAlwaysOnTop.Name" xml:space="preserve">
+    <value>checkBoxAlwaysOnTop</value>
+  </data>
+  <data name="labelCheckTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 216</value>
+  </data>
+  <data name="&gt;&gt;tabPageRiZhi.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaCi.Name" xml:space="preserve">
+    <value>textBoxGaiMaCi</value>
+  </data>
+  <data name="labelXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;comboBoxShanChuMa.Parent" xml:space="preserve">
+    <value>tabPageShanChu</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="textBoxGaiCiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxCiKuMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="labelYuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonShanChu.Name" xml:space="preserve">
+    <value>buttonShanChu</value>
+  </data>
+  <data name="labelCheckTiaoPinChang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 251</value>
+  </data>
+  <data name="textBoxBeiFenMuLu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelYuanCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxTianJiaCi.Name" xml:space="preserve">
+    <value>textBoxTianJiaCi</value>
+  </data>
+  <data name="labelGaiMaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiCi.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="richTextBoxLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonBeiFenMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 154</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFen.Name" xml:space="preserve">
+    <value>buttonBeiFen</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangMa.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;labelCheckGaiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPagePrepare.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiCi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelYuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="textBoxGaiMaMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCheck.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;checkBoxChaoJiZiCi.Name" xml:space="preserve">
+    <value>checkBoxChaoJiZiCi</value>
+  </data>
+  <data name="textBoxGaiCiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 166</value>
+  </data>
+  <data name="comboBoxYuanCi.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="textBoxTiaoPinChangCi.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBuYaoBeiFen.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTianJiaMa.Name" xml:space="preserve">
+    <value>comboBoxTianJiaMa</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 213</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaMa.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="buttonGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 166</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCi.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="labelCheckBeiFen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 378</value>
+  </data>
+  <data name="&gt;&gt;buttonCiKuMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCi.Name" xml:space="preserve">
+    <value>labelTiaoPinDuanCi</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaMa.Name" xml:space="preserve">
+    <value>labelTianJiaMa</value>
+  </data>
+  <data name="&gt;&gt;labelCheckGaiMa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPageRiZhi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelCheckShanChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 216</value>
+  </data>
+  <data name="&gt;&gt;buttonTianJia.Name" xml:space="preserve">
+    <value>buttonTianJia</value>
+  </data>
+  <data name="labelCheckXiuGai.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="comboBoxShanChuMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 216</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeiFenMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonExportLog.Name" xml:space="preserve">
+    <value>buttonExportLog</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiCi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialogBeiFen.Name" xml:space="preserve">
+    <value>folderBrowserDialogBeiFen</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaMa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelYuanCi.Name" xml:space="preserve">
+    <value>labelYuanCi</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;textBoxTianJiaCi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabPageTianJia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTianJia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonCiKuMuLu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckXiuGai.Name" xml:space="preserve">
+    <value>labelCheckXiuGai</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCi.Name" xml:space="preserve">
+    <value>labelTiaoPinChangCi</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinChangMa.Name" xml:space="preserve">
+    <value>comboBoxTiaoPinChangMa</value>
+  </data>
+  <data name="&gt;&gt;labelBeiFenMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxChaoJiZiCi.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangMa.Name" xml:space="preserve">
+    <value>labelTiaoPinChangMa</value>
+  </data>
+  <data name="buttonCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="labelShanChuCi.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 113</value>
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiMa.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;labelYuan.Name" xml:space="preserve">
+    <value>labelYuan</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaMa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonExportLog.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="labelTiaoPinDuanMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonExportLog.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHelp.Name" xml:space="preserve">
+    <value>linkLabelHelp</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCheck.Name" xml:space="preserve">
+    <value>labelTiaoPinChangCheck</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="linkLabelAbout.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckTianJia.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxYuanMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPagePrepare.Name" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="textBoxGaiMaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 166</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiMa.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="checkBoxBuYaoBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
+    <value>tabPage6</value>
+  </data>
+  <data name="&gt;&gt;tabPageRiZhi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="buttonGengXin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 216</value>
+  </data>
+  <data name="labelCheckShanChu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="tabPageGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="&gt;&gt;tabPageWanCheng.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="&gt;&gt;labelBeiFenMuLu.Name" xml:space="preserve">
+    <value>labelBeiFenMuLu</value>
+  </data>
+  <data name="tabPagePrepare.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaCi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="radioButtonXiuGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinChang.Name" xml:space="preserve">
+    <value>labelCheckTiaoPinChang</value>
+  </data>
+  <data name="&gt;&gt;buttonImportLog.Name" xml:space="preserve">
+    <value>buttonImportLog</value>
+  </data>
+  <data name="labelXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="labelYuanCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 198</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFenMuLu.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelYuanMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxXiuGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="buttonGengXin.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="labelCheckTiaoPinChang.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="comboBoxYuanCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCheckBeiFen.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>11, 24</value>
+  </data>
+  <data name="&gt;&gt;labelYuanCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxLog.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaCi.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 89</value>
+  </data>
+  <data name="buttonXiuGai.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCheck.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxShanChuCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="tabControlmain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;labelYuanMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiMa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageShanChu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxXiuGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 216</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="&gt;&gt;textBoxTiaoPinChangCi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPageGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="labelCheckTianJia.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelShanChuMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxShanChuCi.Parent" xml:space="preserve">
+    <value>tabPageShanChu</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCi.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;tabControlmain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeiFenMuLu.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonCiKuMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="textBoxGaiCiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="checkBoxChaoJiZiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="labelGaiMaCi.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;buttonShanChu.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelGaiCiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinDuanMa.Name" xml:space="preserve">
+    <value>comboBoxTiaoPinDuanMa</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTiaoPinChangMa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxYuanMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 201</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuMa.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="richTextBoxLog.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 189</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTianJia.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="buttonBeiFen.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;buttonTianJia.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuMa.Name" xml:space="preserve">
+    <value>labelShanChuMa</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 222</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanCi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Name" xml:space="preserve">
+    <value>checkBoxBuYaoBeiFen</value>
+  </data>
+  <data name="textBoxShanChuCi.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFen.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="labelYuan.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="labelCheckBeiFen.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTianJiaCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageGaiMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPageWanCheng.Name" xml:space="preserve">
+    <value>tabPageWanCheng</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 200</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAbout.Name" xml:space="preserve">
+    <value>linkLabelAbout</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownTianJiaMaChang.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanCi.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="&gt;&gt;tabControlmain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTianJia.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonGengXin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxShanChuMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiMa.Name" xml:space="preserve">
+    <value>textBoxGaiCiMa</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiMa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBoxShanChuMa.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaCi.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="&gt;&gt;tabPageHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxGaiCiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonGaiCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonGaiMa.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="&gt;&gt;textBoxTiaoPinDuanCi.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBoxGaiMaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="labelTiaoPinDuanCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCheck.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;tabPageHome.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="labelCheckGaiMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelTianJiaMaChang.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="&gt;&gt;checkBoxChaoJiZiCi.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuan.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 216</value>
+  </data>
+  <data name="&gt;&gt;tabPageTianJia.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiMa.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCi.Name" xml:space="preserve">
+    <value>labelXiuGaiCi</value>
+  </data>
+  <data name="labelCheckGaiMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 166</value>
+  </data>
+  <data name="tabPageHome.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanMa.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiMa.Name" xml:space="preserve">
+    <value>labelXiuGaiMa</value>
+  </data>
+  <data name="&gt;&gt;tabPageXiuGai.Name" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;labelYuan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiCi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaCi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonCiKuMuLu.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelYuan.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialogCiKu.Name" xml:space="preserve">
+    <value>folderBrowserDialogCiKu</value>
+  </data>
+  <data name="comboBoxTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 208</value>
+  </data>
+  <data name="&gt;&gt;labelCheckGaiCi.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiMa.Name" xml:space="preserve">
+    <value>buttonGaiMa</value>
+  </data>
+  <data name="labelGaiCiMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBoxBuYaoBeiFen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 216</value>
+  </data>
+  <data name="tabControlmain.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPageTiaoPin.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiCi.Name" xml:space="preserve">
+    <value>buttonGaiCi</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiMa.Name" xml:space="preserve">
+    <value>labelGaiCiMa</value>
+  </data>
+  <data name="&gt;&gt;tabPageGaiCi.Name" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaMa.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="buttonGaiMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxTianJiaCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelCiKuMuLu.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangMa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaMa.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxTianJiaCi.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="&gt;&gt;textBoxTiaoPinDuanCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 251</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxCiKuMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTiaoPinChangCi.Parent" xml:space="preserve">
+    <value>tabPageTiaoPin</value>
+  </data>
+  <data name="buttonGaiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;labelCheckShanChu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageWanCheng.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeiFenMuLu.Name" xml:space="preserve">
+    <value>textBoxBeiFenMuLu</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiCi.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="labelTianJiaMaChang.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabPageTianJia.Name" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="&gt;&gt;labelCheckShanChu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelCheckGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxAlwaysOnTop.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuMa.Parent" xml:space="preserve">
     <value>tabPageShanChu</value>
   </data>
-  <data name="labelTiaoPinChangCi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
+  <data name="labelCiKuMuLu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <metadata name="checkBoxChaoJiZiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="labelTianJiaMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 204</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="tabPageGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageTianJia.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelTiaoPinDuanCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonXiuGai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBuYaoBeiFen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelCheckGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 166</value>
+  </data>
+  <data name="&gt;&gt;labelGaiCiCi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiCi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 216</value>
+  </data>
+  <data name="buttonGaiCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 166</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiMaMa.Name" xml:space="preserve">
+    <value>textBoxGaiMaMa</value>
+  </data>
+  <data name="textBoxTianJiaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonGengXin.Name" xml:space="preserve">
+    <value>buttonGengXin</value>
+  </data>
+  <data name="&gt;&gt;comboBoxYuanCi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageRiZhi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="textBoxGaiMaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTianJia.Name" xml:space="preserve">
+    <value>labelCheckTianJia</value>
+  </data>
+  <data name="comboBoxTianJiaMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelTianJiaMaChang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelShanChuCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="&gt;&gt;textBoxCiKuMuLu.Name" xml:space="preserve">
+    <value>textBoxCiKuMuLu</value>
+  </data>
+  <data name="labelCheckTiaoPinDuan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 113</value>
+  </data>
+  <data name="&gt;&gt;labelCiKuMuLu.Parent" xml:space="preserve">
+    <value>tabPageHome</value>
+  </data>
+  <data name="buttonBeiFen.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPageTiaoPin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="tabPageTiaoPin.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxTiaoPinDuanCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonGaiCi.Parent" xml:space="preserve">
+    <value>tabPageGaiCi</value>
+  </data>
+  <data name="&gt;&gt;buttonBeiFenMuLu.Name" xml:space="preserve">
+    <value>buttonBeiFenMuLu</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanCi.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 26</value>
+  </data>
+  <data name="labelGaiMaMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelGaiCiMa.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkBoxAlwaysOnTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 166</value>
+  </data>
+  <data name="comboBoxYuan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 251</value>
+  </data>
+  <data name="labelXiuGaiCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 216</value>
+  </data>
+  <data name="&gt;&gt;labelGaiMaMa.Name" xml:space="preserve">
+    <value>labelGaiMaMa</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelShanChuCi.Parent" xml:space="preserve">
+    <value>tabPageShanChu</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelCheckShanChu.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="comboBoxTiaoPinDuanMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 113</value>
+  </data>
+  <data name="labelTianJiaCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 12</value>
+  </data>
+  <data name="&gt;&gt;tabPageTiaoPin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCiKuMuLu.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelCheckTianJia.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelCiKuMuLu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxCiKuMuLu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonImportLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinDuanMa.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBoxTiaoPinChangMa.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;folderBrowserDialogBeiFen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCheckBeiFen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTianJiaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelCheckGaiCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;numericUpDownTianJiaMaChang.Parent" xml:space="preserve">
+    <value>tabPageTianJia</value>
+  </data>
+  <data name="&gt;&gt;labelCheckGaiCi.Name" xml:space="preserve">
+    <value>labelCheckGaiCi</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControlmain</value>
+  </data>
+  <data name="buttonShanChu.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelCheckTiaoPinDuan.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelXiuGaiCheck.Name" xml:space="preserve">
+    <value>labelXiuGaiCheck</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiCi.Name" xml:space="preserve">
+    <value>radioButtonXiuGaiCi</value>
+  </data>
+  <data name="&gt;&gt;buttonImportLog.Parent" xml:space="preserve">
+    <value>tabPageRiZhi</value>
+  </data>
+  <data name="&gt;&gt;buttonGengXin.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelGaiMaCi.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;labelYuanMa.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelCheckTiaoPinChang.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaMaChang.Name" xml:space="preserve">
+    <value>labelTianJiaMaChang</value>
+  </data>
+  <data name="&gt;&gt;tabPageWanCheng.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelYuanMa.Parent" xml:space="preserve">
+    <value>tabPageGaiMa</value>
+  </data>
+  <data name="&gt;&gt;labelTianJiaCi.Name" xml:space="preserve">
+    <value>labelTianJiaCi</value>
+  </data>
+  <data name="numericUpDownTianJiaMaChang.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxXiuGaiMa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxGaiCiCi.Name" xml:space="preserve">
+    <value>textBoxGaiCiCi</value>
+  </data>
+  <data name="&gt;&gt;labelTiaoPinChangCi.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonXiuGaiCi.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="&gt;&gt;labelCheckXiuGai.Parent" xml:space="preserve">
+    <value>tabPageXiuGai</value>
+  </data>
+  <data name="comboBoxYuanCi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 201</value>
+  </data>
+  <data name="labelTiaoPinChangMa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 249</value>
+  </data>
+  <data name="comboBoxTianJiaMa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="labelGaiCiCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonExportLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 251</value>
+  </data>
+  <data name="textBoxGaiMaCi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelXiuGaiCi.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>tabPagePrepare</value>
+  </data>
+  <data name="&gt;&gt;buttonTiaoPin.Name" xml:space="preserve">
+    <value>buttonTiaoPin</value>
+  </data>
+  <data name="&gt;&gt;tabPageShanChu.Name" xml:space="preserve">
+    <value>tabPageShanChu</value>
+  </data>
+  <data name="labelShanChuMa.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeiFenMuLu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="labelXiuGaiCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="textBoxShanChuCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="textBoxXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>69</value>
+  <metadata name="folderBrowserDialogBeiFen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>158, 17</value>
   </metadata>
-  <metadata name="textBoxTiaoPinDuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelTianJiaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelCheckXiuGai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelTiaoPinChangMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="tabPageShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="textBoxTiaoPinChangCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="radioButtonXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCheckTiaoPinChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxTianJiaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="labelGaiMaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelCheckGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTiaoPinDuanCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTianJiaMaChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelCheckGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTiaoPinChangCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxYuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="linkLabelAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxGaiMaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelYuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="button4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxGaiCiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="numericUpDownTianJiaMaChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="checkBoxAlwaysOnTop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2181,37 +2151,40 @@
   <metadata name="tabPageXiuGai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelTianJiaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="tabPageTiaoPin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="textBoxGaiCiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelTiaoPinDuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelShanChuCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCheckShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="labelGaiCiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="buttonXiuGai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="tabPageHome.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="buttonGengXin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelTiaoPinChangCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelCheckBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="buttonShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelShanChuMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxShanChuMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTiaoPinDuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBoxYuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="tabPageGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2220,172 +2193,199 @@
   <metadata name="buttonExportLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelYuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="linkLabelHelp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="richTextBoxLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelCheckShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="radioButtonXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="labelCheckTianJia.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="buttonCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="textBoxGaiMaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="textBoxGaiCiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="textBoxTiaoPinDuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="checkBoxBuYaoBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelTiaoPinChangMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelXiuGaiCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabControlmain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxGaiMaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxTiaoPinDuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxYuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonShanChu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="folderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>210, 18</value>
-  </metadata>
-  <metadata name="labelGaiMaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxTianJiaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTianJiaCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxTianJiaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelShanChuCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonTiaoPin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelTiaoPinDuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabPageRiZhi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonTianJia.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelYuan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxYuan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="folderBrowserDialogCiKu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>158, 17</value>
-  </metadata>
-  <metadata name="tabPagePrepare.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="comboBoxTiaoPinChangMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="textBoxBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="labelGaiCiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="buttonGengXin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tabPageWanCheng.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="button3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelYuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="labelCheckTiaoPinDuan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="labelCheckTiaoPinChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="radioButtonXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="radioButtonXiuGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelCheckXiuGai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxGaiMaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>69</value>
+  </metadata>
+  <metadata name="labelTiaoPinChangCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCheckBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonXiuGai.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBoxShanChuMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelGaiCiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCheckGaiMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBoxTiaoPinChangMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelTiaoPinDuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="buttonImportLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageTiaoPin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBoxYuan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="labelTianJiaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="linkLabelAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="tabPageTianJia.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tabPageHome.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="linkLabelHelp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="folderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>210, 18</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxBeiFenMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBoxTiaoPinDuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonTianJia.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxGaiCiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelYuan.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelTiaoPinDuanCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxXiuGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPageGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPageRiZhi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCheckGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBoxYuanCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>416, 24</value>
   </metadata>
-  <metadata name="folderBrowserDialogBeiFen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="labelShanChuMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPagePrepare.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPageWanCheng.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="folderBrowserDialogCiKu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>158, 17</value>
+  </metadata>
+  <metadata name="checkBoxBuYaoBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="buttonTiaoPin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="button3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelYuanMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>zh</value>
   </metadata>
-  <metadata name="buttonGaiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="tabControlmain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="buttonBeiFen.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="textBoxShanChuCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelTianJiaMaChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBoxTianJiaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelCiKuMuLu.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelGaiMaMa.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="button4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="labelTiaoPinChangCheck.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="richTextBoxLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="checkBoxChaoJiZiCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBoxTiaoPinChangCi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="numericUpDownTianJiaMaChang.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

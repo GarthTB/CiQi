@@ -1113,7 +1113,8 @@
     <value>导出</value>
   </data>
   <data name="buttonExportLog.ToolTip" xml:space="preserve">
-    <value>可以续写哦</value>
+    <value>导出带时间后缀的日志，
+同名的日志将被覆盖。</value>
   </data>
   <data name="richTextBoxLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>

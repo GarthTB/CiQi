@@ -96,7 +96,7 @@ namespace 词器
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.2\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.3\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -1230,7 +1230,7 @@ namespace 词器
             }
             CiZuStream.Dispose();//载入完成
             string XinMa = string.Empty;//短词调频后的长码全码
-            List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取调频后的长码全码
+            List<string> QuanMa = GetQuanMa(textBoxTiaoPinDuanCi.Text);//获取短词调频后的长码全码
             foreach (string quanma in QuanMa)
             {
                 if (quanma.StartsWith(comboBoxTiaoPinDuanMa.Text))
@@ -1239,19 +1239,8 @@ namespace 词器
                     break;
                 }
             }
-            if (!labelCheckTiaoPinDuan.Text.Contains("占"))
-            {
-                for (int n = 3; n <= 6; n++)//找到最短的空码
-                {
-                    if (!YiYouMa(XinMa[..n]))
-                    {
-                        XinMa = XinMa[..n];
-                        break;
-                    }
-                }
-            }
             int count = 0;//用来决定什么时候跳出循环
-            if (XinMa == comboBoxTiaoPinChangMa.Text)//如果短码词的长码恰好是长码词的长码
+            if (XinMa.StartsWith(comboBoxTiaoPinChangMa.Text))//如果短码词的长码恰好是长码词的长码
             {
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
@@ -1270,6 +1259,17 @@ namespace 词器
             }
             else//如果短码词的长码不是长码词的长码
             {
+                if (!labelCheckTiaoPinDuan.Text.Contains("占"))
+                {
+                    for (int n = 4; n <= 6; n++)//找到最短的空码
+                    {
+                        if (!YiYouMa(XinMa[..n]))
+                        {
+                            XinMa = XinMa[..n];
+                            break;
+                        }
+                    }
+                }
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
                     if (Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
@@ -1371,7 +1371,7 @@ namespace 词器
                 folderBrowserDialog.Description = "日志将被放在此文件夹";
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log.yaml";
+                    string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log.yaml" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
                     using StreamWriter LogStream = new(LogLuJing);
                     LogStream.Write(richTextBoxLog.Text);
                     MessageBox.Show("导出成功", "提示", MessageBoxButtons.OK);
