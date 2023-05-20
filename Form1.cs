@@ -96,7 +96,7 @@ namespace 词器
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.3\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.4\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
