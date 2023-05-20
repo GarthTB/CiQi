@@ -938,7 +938,7 @@ namespace 词器
                     labelCheckGaiMa.ForeColor = Color.Blue;
                     labelCheckGaiMa.Text = "!已有码";
                 }
-                else if (GengDuanKongMa(textBoxGaiMaMa.Text))
+                else if (GengDuanKongMa(textBoxGaiMaMa.Text) && textBoxGaiMaMa.Text.Length > 3)
                 {
                     labelCheckGaiMa.ForeColor = Color.Blue;
                     labelCheckGaiMa.Text = "!更短空";
@@ -1371,7 +1371,7 @@ namespace 词器
                 folderBrowserDialog.Description = "日志将被放在此文件夹";
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log.yaml" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+                    string LogLuJing = folderBrowserDialog.SelectedPath + @"\xkjd6.cizu.dict.log(" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ").yaml";
                     using StreamWriter LogStream = new(LogLuJing);
                     LogStream.Write(richTextBoxLog.Text);
                     MessageBox.Show("导出成功", "提示", MessageBoxButtons.OK);
