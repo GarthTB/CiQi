@@ -96,7 +96,7 @@ namespace 词器
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.4\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.5\r\n一个用于维护星空键道6输入法Rime版的词库的小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -988,20 +988,21 @@ namespace 词器
                 Ci_Malist.Add(Ci_Ma);
             }
             CiZuStream.Dispose();//载入完成
-            int count = 0;//用来决定什么时候跳出循环
+            bool check1 = false;//用来决定什么时候跳出循环
+            bool check2 = false;
             for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
             {
-                if (Ci_Malist[n] == textBoxGaiMaCi.Text + "\t" + comboBoxYuanMa.Text)
+                if (check1 == false && Ci_Malist[n] == textBoxGaiMaCi.Text + "\t" + comboBoxYuanMa.Text)
                 {
                     Ci_Malist.RemoveAt(n);
-                    count++;
+                    check1 = true;
                 }
-                if (XinMaZaiQian(textBoxGaiMaMa.Text, Ci_Malist[n].Split("\t")[1]))
+                if (check2 == false && XinMaZaiQian(textBoxGaiMaMa.Text, Ci_Malist[n].Split("\t")[1]))
                 {
                     Ci_Malist.Insert(n, textBoxGaiMaCi.Text + "\t" + textBoxGaiMaMa.Text);
-                    count++;
+                    check2 = true;
                 }
-                if (count == 2) break;
+                if (check1 && check2) break;
             }
             File.Delete(CiZuLuJing);
             StreamWriter NewCiZuStream = new(CiZuLuJing);
@@ -1239,22 +1240,23 @@ namespace 词器
                     break;
                 }
             }
-            int count = 0;//用来决定什么时候跳出循环
+            bool check1 = false;//用来决定什么时候跳出循环
+            bool check2 = false;
             if (XinMa.StartsWith(comboBoxTiaoPinChangMa.Text))//如果短码词的长码恰好是长码词的长码
             {
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
-                    if (Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
+                    if (check1 == false && Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
                     {
                         Ci_Malist[n] = textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text;
-                        count++;
+                        check1 = true;
                     }
-                    if (Ci_Malist[n] == textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinChangMa.Text)
+                    if (check1 == false && Ci_Malist[n] == textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinChangMa.Text)
                     {
                         Ci_Malist[n] = textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinChangMa.Text;
-                        count++;
+                        check2 = true;
                     }
-                    if (count == 2) break;
+                    if (check1 && check2) break;
                 }
             }
             else//如果短码词的长码不是长码词的长码
@@ -1272,17 +1274,17 @@ namespace 词器
                 }
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
-                    if (Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
+                    if (check1 == false && Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
                     {
                         Ci_Malist[n] = textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text;
-                        count++;
+                        check1 = true;
                     }
-                    if (Ci_Malist[n] == textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinChangMa.Text)
+                    if (check2 == false && Ci_Malist[n] == textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinChangMa.Text)
                     {
                         Ci_Malist.RemoveAt(n);
-                        count++;
+                        check2 = true;
                     }
-                    if (count == 2) break;
+                    if (check1 && check2) break;
                 }
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
