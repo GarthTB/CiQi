@@ -96,7 +96,7 @@ namespace 词器
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.6\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.7\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -1317,7 +1317,7 @@ namespace 词器
             {
                 TiaoPin();
             }
-            else if (labelCheckTiaoPinDuan.Visible && labelCheckTiaoPinDuan.ForeColor == Color.Blue && labelCheckTiaoPinChang.Visible && labelCheckTiaoPinChang.ForeColor == Color.Blue)
+            else if (labelCheckTiaoPinDuan.Visible && labelCheckTiaoPinChang.Visible && ((labelCheckTiaoPinDuan.ForeColor == Color.Blue && labelCheckTiaoPinChang.ForeColor == Color.Blue) || (labelCheckTiaoPinDuan.ForeColor == Color.Green && labelCheckTiaoPinChang.ForeColor == Color.Blue) || (labelCheckTiaoPinDuan.ForeColor == Color.Blue && labelCheckTiaoPinChang.ForeColor == Color.Green)))
             {
                 if (MessageBox.Show("确定调频吗？", "误码提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.OK)
                 {
