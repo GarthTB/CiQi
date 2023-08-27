@@ -47,7 +47,7 @@ namespace 词器
             }
             else if (!checkBoxBuYaoBeiFen.Checked && labelCheckBeiFen.ForeColor == Color.Red && tabControlmain.SelectedTab != tabPageHome)
             {
-                MessageBox.Show("请先备份，再进行维护。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("请先备份，再维护。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tabControlmain.SelectedTab = tabPageHome;
             }
         }
@@ -89,14 +89,14 @@ namespace 词器
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //弹出帮助
-            MessageBox.Show("此工具可进行以下操作：\r\n\r\n添加：在词库中添加一行。\r\n删除：在词库中删除一行。\r\n改词：将词库里某行的词换成另一个词。\r\n改码：将词库里某行的码换成另一个码。\r\n调频：将长码的词移到短码上，短码的词移到最短的空码上。\r\n\r\n注意：\r\n\r\n1. 本工具支持将非3字词放在3码，但不推荐这么做。\r\n2. 仅支持由DanZi中的字组成的词组，用其他字可能出错。", "帮助", MessageBoxButtons.OK);
+            MessageBox.Show("此工具可用于：\r\n\r\n添加：在词库中添加一行。\r\n删除：在词库中删除一行。\r\n改词：将词库里某行的词换成另一个词。\r\n改码：将词库里某行的码换成另一个码。\r\n调频：将长码的词移到短码上，短码的词移到最短的空码上。\r\n\r\n注意：\r\n\r\n1. 本工具支持将非3字词放在3码，但不推荐这么做。\r\n2. 仅支持由DanZi中的字组成的词组，用其他字可能出错。", "帮助", MessageBoxButtons.OK);
         }
 
         private void linkLabelAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.8\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v0.9\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -683,7 +683,7 @@ namespace 词器
             }
             else if (labelCheckShanChu.Visible && labelCheckShanChu.ForeColor == Color.Blue)
             {
-                MessageBox.Show("该码删除后会有空位，请到改码页面进行补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("该码删除后会有空位，请到改码页面补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 ShanChu();
             }
             else
@@ -1108,7 +1108,7 @@ namespace 词器
                 }
                 if (XinMa.Count > 1)
                 {
-                    MessageBox.Show("此短码对应多个长码，无法进行调频。\r\n若到手动调频，请到改码页面操作。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("此短码对应多个长码，无法调频。\r\n若到手动调频，请到改码页面操作。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBoxTiaoPinDuanCi.Text = string.Empty;
                 }
                 else
@@ -1273,6 +1273,10 @@ namespace 词器
                         }
                     }
                 }
+                if (XuYaoBuWei(comboBoxTiaoPinChangMa.Text))
+                {
+                    MessageBox.Show("长码调频后会有空位，请到改码页面补位。", "补位提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
                 for (int n = 5; n < Ci_Malist.Count; n++)//从第六行开始比较
                 {
                     if (check1 == false && Ci_Malist[n] == textBoxTiaoPinDuanCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text)
@@ -1305,7 +1309,7 @@ namespace 词器
             NewCiZuStream.Dispose();//写入完成
             richTextBoxLog.Text += textBoxTiaoPinDuanCi.Text + "\t" + XinMa + "\t调频\t" + labelCheckTiaoPinDuan.Text + "\t原码：\t" + comboBoxTiaoPinDuanMa.Text + "\r\n";
             richTextBoxLog.Text += textBoxTiaoPinChangCi.Text + "\t" + comboBoxTiaoPinDuanMa.Text + "\t调频\t" + labelCheckTiaoPinChang.Text + "\t原码：\t" + comboBoxTiaoPinChangMa.Text + "\r\n";
-            labelCheckTiaoPinDuan.ForeColor = labelCheckTiaoPinChang.ForeColor = Color.Red;//防止再次进行调频操作
+            labelCheckTiaoPinDuan.ForeColor = labelCheckTiaoPinChang.ForeColor = Color.Red;//防止再次调频
             labelCheckTiaoPinDuan.Text = labelCheckTiaoPinChang.Text = "×已修改";
         }
 
