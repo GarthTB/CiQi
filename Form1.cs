@@ -96,7 +96,7 @@ namespace 词器
         {
             //弹出关于并自动复制链接
             Clipboard.SetDataObject("https://github.com/GarthTB/CiQi");
-            MessageBox.Show("词器v0.9\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
+            MessageBox.Show("词器v1.0\r\n一个用于维护星空键道6输入法Rime版的词库的Windows小工具。\r\n源码链接已复制到剪贴板。", "词器", MessageBoxButtons.OK);
         }
 
         private void checkBoxBuYaoBeiFen_CheckedChanged(object sender, EventArgs e)
@@ -361,6 +361,7 @@ namespace 词器
 
         private bool GengDuanKongMa(string Ma)//检查是否有更短空码
         {
+            if (!new[] { "a", "i", "o", "u", "v" }.Contains(Ma[^1..])) return false;
             using StreamReader CiZuStream = new(CiZuLuJing, Encoding.Default);
             for (int n = 0; n < 5; n++)//跳过文件头
             {
